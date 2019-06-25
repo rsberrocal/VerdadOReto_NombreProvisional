@@ -1,5 +1,7 @@
 {
   "name": "VerdadOReto_NombreProvisional",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
