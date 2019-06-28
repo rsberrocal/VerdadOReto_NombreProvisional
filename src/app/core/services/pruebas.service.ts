@@ -7,4 +7,8 @@ import {Pruebas} from '../../shared/classes/pruebas';
 export class PruebasService {
   pruebasList: Pruebas[] = [];
   constructor() { }
+
+  loadPruebas(){
+    
+  }
 }
