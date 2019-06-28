@@ -1,0 +1,22 @@
+{
+  "Pruebas": [
+    {
+      "title": "text",
+      "description": "desc",
+      "numPlayers": 2,
+      "score": 10
+    },
+    {
+      "title": "text2",
+      "description": "desc",
+      "numPlayers": 2,
+      "score": 10
+    },
+    {
+      "title": "tex2t",
+      "description": "desc",
+      "numPlayers": 2,
+      "score": 10
+    }
+  ]
+}
