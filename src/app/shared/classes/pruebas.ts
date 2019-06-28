@@ -4,7 +4,8 @@ export class Pruebas {
     numPlayers;
     score;
 
-    constructor(){}
+    constructor() {
+    }
 
-    
+
 }
