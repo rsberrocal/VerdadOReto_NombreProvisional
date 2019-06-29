@@ -12,16 +12,31 @@
         ¡Bienvenidos!
     </h2>
     <h2 class="subtitles">Elegid un juego:</h2>
-    <div class = "buttons">
-        <div text-center class="ion-padding">
-            <ion-button style="margin: 5px" class="homebutton" color="tertiary">Verdad o Reto</ion-button>
-        </div>
-        <div text-center class="ion-padding">
-            <ion-button style="margin: 5px" class="homebutton" color="tertiary">Moneda</ion-button>
-        </div>
-        <div text-center class="ion-padding">
-            <ion-button style="margin: 5px" class="homebutton" color="tertiary">Yo nunca</ion-button>
-        </div>
+    <div class="buttons" text-center>
+
+        <ion-button class="homebutton" color="tertiary" routerLink="/verdad-o-reto">Verdad o Reto</ion-button>
+        <ion-button class="homebutton" color="tertiary">Moneda</ion-button>
+        <ion-button class="homebutton" color="tertiary">Yo nunca</ion-button>
+
     </div>
+    <div class="addButtons" text-center>
+        <ion-button class="addPlayer" color="primary">Añadir Participantes</ion-button>
+    </div>
+
+    <ion-list class="list">
+        <ion-item>
+            <ion-label>Sergi</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Katia</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Richar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Ruben</ion-label>
+        </ion-item>
+    </ion-list>
+
 </ion-content>
 
