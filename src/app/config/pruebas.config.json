@@ -1,22 +1,280 @@
 {
   "Pruebas": [
     {
-      "title": "text",
-      "description": "desc",
+      "title": "BATALLA DE SABLES",
+      "description": "Haz una batalla de sables con {user]",
       "numPlayers": 2,
-      "score": 10
+      "score": 4
     },
     {
-      "title": "text2",
-      "description": "desc",
-      "numPlayers": 2,
-      "score": 10
+      "title": "Coma Etilico",
+      "description": "Bebete un cubata entero",
+      "numPlayers": 1,
+      "score": 4
     },
     {
-      "title": "tex2t",
-      "description": "desc",
+      "title": "Eres un pastel",
+      "description": "Te han de romper un huevo en el pelo y tirarte harina ",
+      "numPlayers": 1,
+      "score": 4
+    },
+    {
+      "title": "Sacatela",
+      "description": "Bajate el pantalon y la ropa interior durante un breve instante ",
+      "numPlayers": 1,
+      "score": 4
+    },
+    {
+      "title": "Que St Hilari este contigo",
+      "description": "Hazte un St Hilari de lo que te quede ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "Bañito pa despejarse",
+      "description": "Tirate a la piscina con ropa ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "Cumshot",
+      "description": "El jugador de tu izquierda te dara un tartazo en la cara ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "Cambio de vida",
+      "description": "Cambiate la ropa con {user] si es del sexo opuesto ",
       "numPlayers": 2,
-      "score": 10
+      "score": 3
+    },
+    {
+      "title": "???????????????",
+      "description": "Bebe del escote de {user] ",
+      "numPlayers": 2,
+      "score": 3
+    },
+    {
+      "title": "Haste el fondo",
+      "description": "Liate con {user} ",
+      "numPlayers": 2,
+      "score": 3
+    },
+    {
+      "title": "Llamada de emergencia",
+      "description": "Llama a quien quieras por telefono y convencele para que tengais sexo ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "Te Bañaste Wey",
+      "description": "Bañate con {user} ",
+      "numPlayers": 2,
+      "score": 3
+    },
+    {
+      "title": "Full sexy",
+      "description": "Quedate en ropa interior 1 ronda ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "",
+      "description": "Cambiate la ropa con {user] si es del sexo opuesto ",
+      "numPlayers": 2,
+      "score": 3
+    },
+    {
+      "title": "Cambio climatico",
+      "description": "Haz el IceBucket Challenge ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "Te has equivocado de cabeza",
+      "description": "Haz el Condom Challenge ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "43+26 (mod)",
+      "description": "Ponte con {user} haciendo un 69 con ropa ",
+      "numPlayers": 2,
+      "score": 3
+    },
+    {
+      "title": "Salsa Tequila Corazon",
+      "description": "Bebete un chupito de Tequila con la sal en el cuello de {user} y el limon en su boca ",
+      "numPlayers": 2,
+      "score": 3
+    },
+    {
+      "title": "El caloret",
+      "description": "Quitate una pieza de ropa ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "TGV",
+      "description": "Bebete un chupito ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Foto traviesa",
+      "description": "Hazte una foto y enviasela a tu ultima busqueda de insta ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "1*10^-12",
+      "description": "Dale un pico a {user} ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Sombra aqui sombra alla",
+      "description": "El jugador de tu izquierda te ha de pintar los labios ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Fabrica de cucuruchos",
+      "description": "Metete un hielo por dentro de la ropa interior ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Karaoke 10€",
+      "description": "Canta una cancion a capella con {user} ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Afinadisimo",
+      "description": "Dale una cachetada a {user} ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Es el mobil",
+      "description": "Sientate encima de {user} durante 1 ronda ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Lee Sin",
+      "description": "Vendate los ojos durante 1 ronda ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "LAMEntable",
+      "description": "Lame la mejilla de {user} ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Top Secret",
+      "description": "Vete a otra habitacion con {user} 5 minutos ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Se pota",
+      "description": "Te han de dar 10 vueltas con los ojos cerrados ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Arcoiris",
+      "description": "Todos incluyendote a ti se quitan la ropa del color de tu camiseta ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Streeper",
+      "description": "Ponte encima de {user} y quitale la camiseta ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Dracarys",
+      "description": "Come lo mas picante que tengas ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Flus Flus",
+      "description": "El de tu izquierda te ha de tirar un vaso de agua a la cara ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Puro Perreo",
+      "description": "Perrea una cancion con {user} ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Sandwich Puro Perreo",
+      "description": "{user} y {user} te van a perrear} ",
+      "numPlayers": 3,
+      "score": 2
+    },
+    {
+      "title": "Patada voladora",
+      "description": "Te han de mezclar en un chupito bebidas alcoholicas random ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Un Xavi",
+      "description": "Ignora a {user} hasta que te salga un reto con el, si lo haces bebes ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Ojala a David",
+      "description": "No hables en 1 ronda, si lo haces bebes  ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Tienes tremendo...",
+      "description": "Ensaña el culo  ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "Richi",
+      "description": "Abre al contacto con el que tengas la conversacion mas antigua  ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "The Walking Dead",
+      "description": "Muerde el cachete de {user}  ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "And the winner is...",
+      "description": "Liate con {user} y con {user} y di quien lo hace mejor  ",
+      "numPlayers": 3,
+      "score": 3
+    },
+    {
+      "title": "Si toca mejor",
+      "description": "Pasa el hielo de boca a {user} 3 veces  ",
+      "numPlayers": 2,
+      "score": 2
+    },
+    {
+      "title": "Expectativa, Realidad",
+      "description": "Haz un pulso con {user} y el que pierda bebe  ",
+      "numPlayers": 2,
+      "score": 2
     }
   ]
 }
