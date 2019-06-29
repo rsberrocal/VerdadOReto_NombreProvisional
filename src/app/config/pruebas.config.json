@@ -157,7 +157,7 @@
       "score": 2
     },
     {
-      "title": "Es el mobil",
+      "title": "Es el movil",
       "description": "Sientate encima de {user} durante 1 ronda ",
       "numPlayers": 2,
       "score": 2
@@ -275,6 +275,31 @@
       "description": "Haz un pulso con {user} y el que pierda bebe  ",
       "numPlayers": 2,
       "score": 2
+    },
+    {
+      "title": "Dobby es libre",
+      "description": "Huele el calcetin del de tu izquierda  ",
+      "numPlayers": 1,
+      "score": 3
+    },
+    {
+      "title": "??",
+      "description": "Dejale el movil al de tu izquierda durante 30 segundos  ",
+      "numPlayers": 1,
+      "score": 2
+    },
+    {
+      "title": "Has tenido cosas mas sucias en la boca y lo sabes",
+      "description": "Lame el suelo  ",
+      "numPlayers": 1,
+      "score": 4
+    },
+    {
+      "title": "O dubi du quiero ser como tu",
+      "description": "Imita durante una ronda al de tu izquierda  ",
+      "numPlayers": 1,
+      "score": 2
     }
+
   ]
 }
