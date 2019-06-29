@@ -1,1 +1,54 @@
+.titles {
+  position: relative;
+  font-family: "Segoe Script";
+  font-size: 160%;
+  top: 2%;
+  color: #7044ff;
+  text-align: center;
+  transform: rotate(-15deg);
+}
 
+.subtitles {
+  position: relative;
+  top: 4%;
+  font-family: "Segoe Script";
+  font-size: 120%;
+  color: #7044ff;
+  text-align: center;
+}
+
+.buttons {
+  position: relative;
+  top: 6%;
+  margin-bottom: 0px;
+}
+
+.homebutton {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+.addPlayer {
+
+  width: 320px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 30pc;
+  text-align: center;
+}
+
+.addButtons {
+  position: relative;
+  top: 8%;
+  margin-bottom: 20px;
+
+}
+
+.list {
+  position: relative;
+  top: 4%;
+}
