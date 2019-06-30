@@ -6,10 +6,8 @@
 
 <ion-content>
 <ion-list>
-  <ion-item-sliding *ngFor="let user of rankingList">
-    <ion-item-option side="end">
-      <ion-item-option>{{user.name}}</ion-item-option>
-    </ion-item-option>
-  </ion-item-sliding>
+  <ion-item *ngFor="let user in rankingList">
+    <ion-label> {{user.name}}</ion-label>
+  </ion-item>
 </ion-list>
 </ion-content>

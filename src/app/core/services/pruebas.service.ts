@@ -11,14 +11,13 @@ export class PruebasService {
     pruebasList: Pruebas[] = [];
 
     constructor() {
+        this.loadPruebas();
     }
 
     loadPruebas() {
         this.pruebasList = pruebasConfig.Pruebas as Pruebas[];
-        for(let t of this.pruebasList){
-            console.log(t);
         }
-        console.log('json', pruebasConfig.Pruebas);
-        console.log('array', this.pruebasList);
+    getPruebas(): Pruebas[]{
+        return this.pruebasList;
     }
 }

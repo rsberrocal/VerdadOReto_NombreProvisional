@@ -8,7 +8,8 @@ import {Users} from "../../shared/classes/users";
   styleUrls: ['./verdad-o-reto.page.scss'],
 })
 export class VerdadORetoPage implements OnInit {
-user: Users;
+
+    user =  new Users(" ");
   constructor(private userService: UsersService) {
       this.user = this.getRandomUser();
   }
