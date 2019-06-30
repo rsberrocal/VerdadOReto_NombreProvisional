@@ -284,7 +284,7 @@
     },
     {
       "title": "??",
-      "description": "Dejale el movil al de tu izquierda durante 30 segundos  ",
+      "description": "Dejale el mobil al de tu izquierda durante 30 segundos  ",
       "numPlayers": 1,
       "score": 2
     },
@@ -299,7 +299,26 @@
       "description": "Imita durante una ronda al de tu izquierda  ",
       "numPlayers": 1,
       "score": 2
+    },
+    {
+      "title": "¿A quien te follarias?",
+      "description": " ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Con quien te liarias?",
+      "description": " ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Con quien vivirias?",
+      "description": " ",
+      "numPlayers": 1,
+      "score": 1
     }
+
 
   ]
 }
