@@ -21,6 +21,7 @@ export class AddUserPage implements OnInit {
 
     addUser() {
         this.usersService.addUser(this.userToAdd.name);
+        this.userToAdd = new Users();
     }
 
     setUsers() {
