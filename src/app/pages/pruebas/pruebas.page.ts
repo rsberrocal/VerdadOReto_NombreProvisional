@@ -10,10 +10,36 @@ import {PruebasService} from "../../core/services/pruebas.service";
   styleUrls: ['./pruebas.page.scss'],
 })
 export class PruebasPage implements OnInit {
+  prueba: Pruebas;
+  jugadorP: Users;
+  jugadoresS: Users[];
+  scoreP: number;
+  constructor(private userService: UsersService, private pruebasService: PruebasService) {
+    this.setPrueba();
+    console.log("Amos a ver")
 
-  constructor() { }
+  }
 
   ngOnInit() {
   }
+  getUsersList(): Users[]{
+    return this.userService.getUsersList();
+  }
+  getPruebasList(): Pruebas[]{
+    return this.pruebasService.getPruebas();
+  }
+  setPrueba(){
+    let finded= false;
+    let x;
+    while(finded==false){
+      x = Math.floor(Math.random() * this.getPruebasList().length);
+      if (this.getPruebasList()[x].score==this.scoreP){
+        this.prueba = this.getPruebasList()[x];
+      }
+    }
 
+  }
+  setCurrentPlayer(user: Users, x: number){
+
+  }
 }
