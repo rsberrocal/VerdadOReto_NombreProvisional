@@ -16,11 +16,13 @@
                 </h2>
             </ion-col>
         </ion-row>
+        <!-- TITLE -->
         <ion-row>
             <ion-col>
                 <h2 class="subtitles">Elegid un juego:</h2>
             </ion-col>
         </ion-row>
+        <!-- GAMES -->
         <ion-row>
             <ion-col text-center>
                 <ion-button class="homebutton" color="tertiary" routerLink="/verdad-o-reto">Verdad o Reto</ion-button>
@@ -36,12 +38,26 @@
                 <ion-button class="homebutton" color="tertiary">Yo nunca</ion-button>
             </ion-col>
         </ion-row>
+        <!-- ADD USERS -->
+        <ion-row>
+            <ion-col text-center>
+                <ion-button  color="primary" routerLink="/users/add-user">Añadir Participantes
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <!-- Users Lists -->
+        <ion-row>
+            <ion-col>
+                <h2 class="subtitles"> Lista de Usuarios</h2>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center>
+                <app-list-users [users]="users"></app-list-users>
+            </ion-col>
+        </ion-row>
     </ion-grid>
-    <div class="addButtons" text-center>
-        <ion-button class="addPlayer" color="primary" routerLink="/users/add-user">Añadir Participantes</ion-button>
-    </div>
 
-    <app-list-users [users]="users"></app-list-users>
 
 </ion-content>
 
