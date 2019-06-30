@@ -25,7 +25,6 @@ export class HomePage {
 
     getUsers() {
         this.users = this.userService.getUsersList();
-        console.log(2);
     }
 
     navigate(routerLink) {
