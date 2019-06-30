@@ -3,7 +3,7 @@
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title text-center>PRUEBA O VERDAD UB</ion-title>
+        <ion-title text-center>UB (Nombre provisional)</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -12,19 +12,31 @@
         <ion-row>
             <ion-col>
                 <h2 class="titles">
-                    ¡RicharGuapo!
+                    ¡Bienvenidos!
                 </h2>
             </ion-col>
         </ion-row>
+        <ion-row>
+            <ion-col>
+                <h2 class="subtitles">Elegid un juego:</h2>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center>
+                <ion-button class="homebutton" color="tertiary" routerLink="/verdad-o-reto">Verdad o Reto</ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center>
+                <ion-button class="homebutton" color="tertiary">Moneda</ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center>
+                <ion-button class="homebutton" color="tertiary">Yo nunca</ion-button>
+            </ion-col>
+        </ion-row>
     </ion-grid>
-    <h2 class="subtitles">Elegid un juego:</h2>
-    <div class="buttons" text-center>
-
-        <ion-button class="homebutton" color="tertiary" routerLink="/verdad-o-reto">Verdad o Reto</ion-button>
-        <ion-button class="homebutton" color="tertiary">Moneda</ion-button>
-        <ion-button class="homebutton" color="tertiary">Yo nunca</ion-button>
-
-    </div>
     <div class="addButtons" text-center>
         <ion-button class="addPlayer" color="primary" routerLink="/users/add-user">Añadir Participantes</ion-button>
     </div>
