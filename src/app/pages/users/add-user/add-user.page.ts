@@ -9,8 +9,9 @@ import {UsersService} from '../../../core/services/users.service';
 })
 export class AddUserPage implements OnInit {
 
-    userToAdd: Users = new Users();
+    userToAdd: Users = new Users('');
     users: Users[];
+    invalid = '';
 
     constructor(private usersService: UsersService) {
     }
@@ -20,8 +21,14 @@ export class AddUserPage implements OnInit {
     }
 
     addUser() {
-        this.usersService.addUser(this.userToAdd.name);
-        this.userToAdd = new Users();
+        console.log(this.userToAdd);
+        if (this.userToAdd.name == '') {
+            console.log('ewqeq');
+            this.invalid = 'invalido';
+        } else {
+            this.usersService.addUser(this.userToAdd.name);
+            this.userToAdd = new Users('');
+        }
     }
 
     setUsers() {
