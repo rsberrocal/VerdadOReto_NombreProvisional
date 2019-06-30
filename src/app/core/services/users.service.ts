@@ -18,9 +18,12 @@ export class UsersService {
     const user = new Users(name);
     this.userList.push(user);
   }
-  removeUser(position: number){
+  removeUser(name: string){
+    let x = this.userList.find( users => users.name === name);
+    let position = this.userList.indexOf(x);
     if (position > -1){
       this.userList.splice(position, 1);
+      console.log(this.userList);
     }
   }
 }
