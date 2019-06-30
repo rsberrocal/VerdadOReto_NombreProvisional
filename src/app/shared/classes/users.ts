@@ -1,7 +1,8 @@
-export class Users{
+export class Users {
     name;
     score;
-    constructor(name){
+
+    constructor(name?) {
         this.name = name;
         this.score = 0;
     }

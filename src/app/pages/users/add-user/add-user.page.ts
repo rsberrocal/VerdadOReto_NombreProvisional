@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Users} from '../../../shared/classes/users';
 
 @Component({
-  selector: 'app-add-user',
-  templateUrl: './add-user.page.html',
-  styleUrls: ['./add-user.page.scss'],
+    selector: 'app-add-user',
+    templateUrl: './add-user.page.html',
+    styleUrls: ['./add-user.page.scss'],
 })
 export class AddUserPage implements OnInit {
 
-  constructor() { }
+    userToAdd: Users = new Users();
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
+
+    addUser() {
+        console.log('USER', this.userToAdd);
+    }
 
 }
