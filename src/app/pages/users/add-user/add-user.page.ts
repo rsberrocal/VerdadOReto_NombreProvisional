@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Users} from '../../../shared/classes/users';
+import {UsersService} from "../../../core/services/users.service";
 
 @Component({
     selector: 'app-add-user',
@@ -10,14 +11,15 @@ export class AddUserPage implements OnInit {
 
     userToAdd: Users = new Users();
 
-    constructor() {
+    constructor(private usersService: UsersService) {
     }
 
     ngOnInit() {
     }
 
     addUser() {
-        console.log('USER', this.userToAdd);
+        this.usersService.addUser(this.userToAdd.name)
+        console.log(this.usersService.getUsersList());
     }
 
 }

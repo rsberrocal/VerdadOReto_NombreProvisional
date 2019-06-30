@@ -24,7 +24,7 @@ user: Users;
           let freeUser = false;
           while (freeUser == false) {
               let x = Math.floor(Math.random() * this.getUsers().length);
-              if (this.getUsers()[x].havePlayed == false) {
+              if (this.getUsers()[x].havePlayed == false){
                   return this.getUsers()[x];
               }
           }

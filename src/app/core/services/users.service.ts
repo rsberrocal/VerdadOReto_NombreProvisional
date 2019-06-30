@@ -4,8 +4,8 @@ import {Users} from "../../shared/classes/users";
   providedIn: 'root'
 })
 export class UsersService {
-  richi = new Users("Richard")
-  userList: Users[] =[this.richi];
+
+  userList: Users[] =[];
   constructor() { }
 
   getUsersList(): Users[]{
