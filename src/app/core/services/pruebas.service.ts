@@ -20,6 +20,5 @@ export class PruebasService {
         }
     getPruebas(): Pruebas[]{
         return this.pruebasList;
-
     }
 }

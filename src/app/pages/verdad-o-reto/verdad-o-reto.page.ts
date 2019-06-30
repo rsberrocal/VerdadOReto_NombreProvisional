@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UsersService} from "../../core/services/users.service";
 import {Users} from "../../shared/classes/users";
+import {CurrentPruebaService} from "../../core/services/current-prueba.service";
 
 @Component({
   selector: 'app-verdad-o-reto',
@@ -10,7 +11,8 @@ import {Users} from "../../shared/classes/users";
 export class VerdadORetoPage implements OnInit {
 
     user =  new Users(" ");
-  constructor(private userService: UsersService) {
+    isReto= false;
+  constructor(private userService: UsersService, private currentPrueba: CurrentPruebaService) {
       this.user = this.getRandomUser();
   }
 
@@ -40,5 +42,12 @@ export class VerdadORetoPage implements OnInit {
           }
       }
       return true;
+  }
+  isRetoTrue(){
+      this.isReto= true;
+  }
+  setCurrentInfo(x: number): void{
+      this.currentPrueba.setCurrentInfo(this.user, x);
+      console.log("Holi");
   }
 }
