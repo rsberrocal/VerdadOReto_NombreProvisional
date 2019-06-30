@@ -22,8 +22,7 @@ export class AddUserPage implements OnInit {
 
     addUser() {
         console.log(this.userToAdd);
-        if (this.userToAdd.name == '') {
-            console.log('ewqeq');
+        if (this.userToAdd.name == '' || this.userExists(this.userToAdd.name)) {
             this.invalid = 'invalido';
         } else {
             this.usersService.addUser(this.userToAdd.name);
@@ -37,5 +36,14 @@ export class AddUserPage implements OnInit {
 
     deleteUserEvent(event) {
         this.usersService.removeUser(event);
+    }
+
+    userExists(userName) {
+        for (let user of this.users) {
+            if (userName == user.name) {
+                return true;
+            }
+        }
+        return false;
     }
 }
