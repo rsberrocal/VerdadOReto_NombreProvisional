@@ -33,4 +33,8 @@ export class HomePage {
         }
     }
 
+    deleteUserEvent(event: Users) {
+        this.userService.removeUser(event.name);
+    }
+
 }
