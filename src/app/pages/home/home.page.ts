@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
 import {UsersService} from '../../core/services/users.service';
 import {Users} from '../../shared/classes/users';
+import {Router} from '@angular/router';
+
 
 @Component({
     selector: 'app-home',
@@ -12,7 +14,8 @@ export class HomePage {
     users: Users[];
 
     constructor(
-        private userService: UsersService
+        private userService: UsersService,
+        private router: Router
     ) {
     }
 
@@ -25,8 +28,10 @@ export class HomePage {
         console.log(2);
     }
 
-    navigate(){
-        this.
+    navigate(routerLink) {
+        if (this.users.length >= 3) {
+            this.router.navigate([routerLink]);
+        }
     }
 
 }
