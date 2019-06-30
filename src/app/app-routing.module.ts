@@ -6,7 +6,8 @@ const routes: Routes = [
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
   { path: 'users', loadChildren: './pages//users/users.module#UsersPageModule' },
   { path: 'pruebas', loadChildren: './pages/pruebas/pruebas.module#PruebasPageModule' },
-  { path: 'verdad-o-reto', loadChildren: './pages//verdad-o-reto/verdad-o-reto.module#VerdadORetoPageModule' },  { path: 'ranking', loadChildren: './ranking/ranking.module#RankingPageModule' }
+  { path: 'verdad-o-reto', loadChildren: './pages//verdad-o-reto/verdad-o-reto.module#VerdadORetoPageModule' },
+  { path: 'ranking', loadChildren: './pages/ranking/ranking.module#RankingPageModule' }
 
 ];
 
