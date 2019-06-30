@@ -25,4 +25,8 @@ export class HomePage {
         console.log(2);
     }
 
+    navigate(){
+        this.
+    }
+
 }
