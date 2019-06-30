@@ -53,7 +53,7 @@
         </ion-row>
         <ion-row>
             <ion-col text-center>
-                <app-list-users [users]="users"></app-list-users>
+                <app-list-users [users]="users" (deleteEvent)="deleteUserEvent($event)"></app-list-users>
             </ion-col>
         </ion-row>
     </ion-grid>
