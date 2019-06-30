@@ -3,6 +3,7 @@ import {Users} from "../../shared/classes/users";
 import {UsersService} from "../../core/services/users.service";
 import {Pruebas} from "../../shared/classes/pruebas";
 import {PruebasService} from "../../core/services/pruebas.service";
+import {CurrentPruebaService} from "../../core/services/current-prueba.service";
 
 @Component({
   selector: 'app-pruebas',
@@ -14,8 +15,12 @@ export class PruebasPage implements OnInit {
   jugadorP: Users;
   jugadoresS: Users[];
   scoreP: number;
-  constructor(private userService: UsersService, private pruebasService: PruebasService) {
-    this.setPrueba();
+  constructor(private userService: UsersService, private pruebasService: PruebasService, private currentPrueba: CurrentPruebaService) {
+
+    this.scoreP = currentPrueba.getScore();
+    console.log(this.scoreP)
+    this.jugadorP = currentPrueba.getCurrentUser();
+    this.prueba = this.setPrueba();
     console.log("Amos a ver")
 
   }
@@ -28,13 +33,14 @@ export class PruebasPage implements OnInit {
   getPruebasList(): Pruebas[]{
     return this.pruebasService.getPruebas();
   }
-  setPrueba(){
-    let finded= false;
+  setPrueba(): Pruebas{
     let x;
-    while(finded==false){
+    while(true){
       x = Math.floor(Math.random() * this.getPruebasList().length);
       if (this.getPruebasList()[x].score==this.scoreP){
-        this.prueba = this.getPruebasList()[x];
+        return this.getPruebasList()[x];
+        console.log("POLLA");
+
       }
     }
 
