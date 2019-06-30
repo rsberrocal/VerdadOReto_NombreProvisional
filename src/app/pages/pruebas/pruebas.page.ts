@@ -15,8 +15,9 @@ export class PruebasPage implements OnInit {
   jugadorP: Users;
   jugadoresS: Users[];
   scoreP: number;
+  ronda: number;
   constructor(private userService: UsersService, private pruebasService: PruebasService, private currentPrueba: CurrentPruebaService) {
-
+    this.ronda = this.pruebasService.getRonda();
     this.scoreP = currentPrueba.getScore();
     console.log(this.scoreP)
     this.jugadorP = currentPrueba.getCurrentUser();

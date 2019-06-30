@@ -9,7 +9,7 @@ import * as pruebasConfig from '../../config/pruebas.config.json';
 })
 export class PruebasService {
     pruebasList: Pruebas[] = [];
-
+    rondas = 1;
     constructor() {
         this.loadPruebas();
     }
@@ -20,5 +20,8 @@ export class PruebasService {
         }
     getPruebas(): Pruebas[]{
         return this.pruebasList;
+    }
+    getRonda(): number{
+        return this.rondas;
     }
 }

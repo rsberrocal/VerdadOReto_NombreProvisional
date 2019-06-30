@@ -1,9 +1,23 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>pruebas</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>VERDAD o RETO</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <ion-row>
+        <ion-col size="12">
+            <ion-item>RONDA {{ronda}}</ion-item>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col size="12">
+        <ion-item> {{jugadorP.name}}</ion-item>
+    </ion-col>
+    </ion-row>
+    <ion-row align-items-center="">
+        <ion-col size="12">
+            <ion-label class = "Titulo" text-center>{{prueba.title}}</ion-label>
+        </ion-col>
+    </ion-row>
 </ion-content>
