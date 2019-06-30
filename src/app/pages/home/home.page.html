@@ -8,9 +8,15 @@
 </ion-header>
 
 <ion-content>
-    <h2 class="titles">
-        ¡RicharGuapo!
-    </h2>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <h2 class="titles">
+                    ¡RicharGuapo!
+                </h2>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
     <h2 class="subtitles">Elegid un juego:</h2>
     <div class="buttons" text-center>
 
@@ -23,20 +29,7 @@
         <ion-button class="addPlayer" color="primary" routerLink="/users/add-user">Añadir Participantes</ion-button>
     </div>
 
-    <ion-list class="list">
-        <ion-item>
-            <ion-label>Sergi</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-label>Katia</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-label>Richar</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-label>Ruben</ion-label>
-        </ion-item>
-    </ion-list>
+    <app-list-users [users]="users"></app-list-users>
 
 </ion-content>
 
