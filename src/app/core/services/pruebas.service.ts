@@ -11,9 +11,15 @@ export class PruebasService {
     pruebasList: Pruebas[] = [];
 
     constructor() {
+        this.loadPruebas();
     }
 
     loadPruebas() {
         this.pruebasList = pruebasConfig.Pruebas as Pruebas[];
+
+        }
+    getPruebas(): Pruebas[]{
+        return this.pruebasList;
+
     }
 }
