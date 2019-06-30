@@ -9,6 +9,7 @@ import {UsersPage} from './users.page';
 import {UsersRoutingPage} from './users-routing.page';
 import {AddUserPage} from './add-user/add-user.page';
 import {AddUserPageModule} from './add-user/add-user.module';
+import {SharedModule} from '../../shared/shared.module';
 
 @NgModule({
     imports: [
@@ -16,7 +17,8 @@ import {AddUserPageModule} from './add-user/add-user.module';
         FormsModule,
         IonicModule,
         UsersRoutingPage,
-        AddUserPageModule
+        AddUserPageModule,
+        SharedModule
     ],
     declarations: [UsersPage]
 })
