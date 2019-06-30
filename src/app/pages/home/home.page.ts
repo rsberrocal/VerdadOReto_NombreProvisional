@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {UsersService} from '../../core/services/users.service';
 import {Users} from '../../shared/classes/users';
 import {Router} from '@angular/router';
+import {AlertController} from '@ionic/angular';
 
 
 @Component({
@@ -15,7 +16,8 @@ export class HomePage {
 
     constructor(
         private userService: UsersService,
-        private router: Router
+        private router: Router,
+        public alertController: AlertController
     ) {
     }
 
@@ -30,6 +32,8 @@ export class HomePage {
     navigate(routerLink) {
         if (this.users.length >= 3) {
             this.router.navigate([routerLink]);
+        } else {
+            this.presentAlert();
         }
     }
 
@@ -37,4 +41,13 @@ export class HomePage {
         this.userService.removeUser(event.name);
     }
 
+    async presentAlert() {
+        const alert = await this.alertController.create({
+            header: 'ERES SUBNORMAL',
+            subHeader: 'Necesitas almenos 3 participantes para jugar.',
+            buttons: ['OK']
+        });
+
+        await alert.present();
+    }
 }
