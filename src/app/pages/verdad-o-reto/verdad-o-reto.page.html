@@ -4,7 +4,9 @@
             <ion-back-button defaultHref="home"></ion-back-button>
         </ion-buttons>
         <ion-buttons slot="end">
-            <ion-fab-button routerLink="/ranking"></ion-fab-button>
+            <ion-button color="warning" (click)="openRanking()">
+                <ion-icon name="trophy"></ion-icon>
+            </ion-button>
         </ion-buttons>
         <ion-title text-center>Verdad o Reto</ion-title>
     </ion-toolbar>
@@ -14,7 +16,7 @@
         <ion-row>
             <ion-col size="12">
                 <ion-item>
-                    <ion-label>Ronda x</ion-label>
+                    <ion-label>Ronda {{ronda}}</ion-label>
                 </ion-item>
             </ion-col>
         </ion-row>
@@ -35,7 +37,9 @@
             <br>
             <ion-row>
                 <ion-col size="12" text-center>
-                    <ion-button class="vor" color="primary" routerLink="/pruebas" (click)="this.setCurrentInfo(1)">Verdad</ion-button>
+                    <ion-button class="vor" color="primary" routerLink="/pruebas" (click)="this.setCurrentInfo(1)">
+                        Verdad
+                    </ion-button>
                 </ion-col>
             </ion-row>
             <ion-row align-items-center>
@@ -61,13 +65,19 @@
 
 
                     <ion-col size="4" text-left>
-                        <ion-button class="diff" color="success" routerLink="/pruebas" (click)="this.setCurrentInfo(2)">UPC</ion-button>
+                        <ion-button class="diff" color="success" routerLink="/pruebas" (click)="this.setCurrentInfo(2)">
+                            UPC
+                        </ion-button>
                     </ion-col>
                     <ion-col size="4" text-center>
-                        <ion-button class="diff" color="warning" routerLink="/pruebas" (click)="this.setCurrentInfo(3)">Medium</ion-button>
+                        <ion-button class="diff" color="warning" routerLink="/pruebas" (click)="this.setCurrentInfo(3)">
+                            Medium
+                        </ion-button>
                     </ion-col>
                     <ion-col size="4" text-end>
-                        <ion-button class="diff" color="danger" routerLink="/pruebas" (click)="this.setCurrentInfo(4)">UB</ion-button>
+                        <ion-button class="diff" color="danger" routerLink="/pruebas" (click)="this.setCurrentInfo(4)">
+                            UB
+                        </ion-button>
                     </ion-col>
                 </ion-row>
             </div>

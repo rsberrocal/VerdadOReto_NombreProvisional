@@ -2,13 +2,16 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {IonicModule} from '@ionic/angular';
 import {ListUsersComponent} from './components/list-users/list-users.component';
+import {RankingComponent} from './components/ranking/ranking.component';
 
 @NgModule({
     declarations: [
-        ListUsersComponent
+        ListUsersComponent,
+        RankingComponent
     ],
     exports: [
-        ListUsersComponent
+        ListUsersComponent,
+        RankingComponent
     ],
     imports: [
         CommonModule,

@@ -1,58 +1,37 @@
 <ion-app>
 
+    <ion-menu side="start" menuId="custom" class="my-custom-menu">
+        <ion-header>
+            <ion-toolbar color="tertiary">
+                <ion-title>Menu</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <ion-item routerLink="/home">
+                    <ion-icon name="home"></ion-icon>&nbsp;Inicio
+                </ion-item>
+                <ion-item routerLink="/users">
+                    <ion-icon name="contacts"></ion-icon>&nbsp;Participantes
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="swap"></ion-icon>&nbsp;Cambiar Juego
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="settings"></ion-icon>&nbsp;Ajustes
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="power"></ion-icon>&nbsp;Salir
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
 
-  <ion-menu side="start" menuId="first">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Start Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+    <ion-menu side="end" type="push">
+        <app-ranking></app-ranking>
+    </ion-menu>
 
-  <ion-menu side="start" menuId="custom" class="my-custom-menu">
-    <ion-header>
-      <ion-toolbar color="tertiary">
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item routerLink="/home"> <ion-icon name="home"></ion-icon>&nbsp;Inicio</ion-item>
-        <ion-item routerLink="/users"><ion-icon name="contacts"></ion-icon>&nbsp;Participantes</ion-item>
-        <ion-item><ion-icon name="swap"></ion-icon>&nbsp;Cambiar Juego</ion-item>
-        <ion-item><ion-icon name="settings"></ion-icon>&nbsp;Ajustes</ion-item>
-        <ion-item> <ion-icon name="power"></ion-icon>&nbsp;Salir</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-
-  <ion-menu side="end" type="push">
-    <ion-header>
-      <ion-toolbar color="danger">
-        <ion-title>End Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-
-  <ion-router-outlet main></ion-router-outlet>
+    <ion-router-outlet main></ion-router-outlet>
 
 
 </ion-app>

@@ -15,8 +15,9 @@ export class PruebasPage implements OnInit {
   jugadorP: Users;
   jugadoresS: Users[];
   scoreP: number;
+  ronda: number;
   constructor(private userService: UsersService, private pruebasService: PruebasService, private currentPrueba: CurrentPruebaService) {
-
+    this.ronda = this.pruebasService.getRonda();
     this.scoreP = currentPrueba.getScore();
     console.log(this.scoreP)
     this.jugadorP = currentPrueba.getCurrentUser();
@@ -37,9 +38,13 @@ export class PruebasPage implements OnInit {
     let x;
     while(true){
       x = Math.floor(Math.random() * this.getPruebasList().length);
+      console.log('x',x);
+      debugger;
       if (this.getPruebasList()[x].score==this.scoreP){
+        console.log('scoreP',this.scoreP);
+        console.log('global pruebas',this.getPruebasList());
+        console.log('Prueba con x',this.getPruebasList()[x]);
         return this.getPruebasList()[x];
-        console.log("POLLA");
 
       }
     }

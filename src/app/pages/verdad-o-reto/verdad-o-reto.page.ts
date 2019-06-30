@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {UsersService} from "../../core/services/users.service";
 import {Users} from "../../shared/classes/users";
 import {CurrentPruebaService} from "../../core/services/current-prueba.service";
+import {PruebasService} from "../../core/services/pruebas.service";
 
 @Component({
   selector: 'app-verdad-o-reto',
@@ -12,8 +13,10 @@ export class VerdadORetoPage implements OnInit {
 
     user =  new Users(" ");
     isReto= false;
-  constructor(private userService: UsersService, private currentPrueba: CurrentPruebaService) {
+    ronda: number;
+  constructor(private userService: UsersService, private currentPrueba: CurrentPruebaService, private pruebasService: PruebasService) {
       this.user = this.getRandomUser();
+      this.ronda= this.pruebasService.getRonda();
   }
 
   ngOnInit() {
