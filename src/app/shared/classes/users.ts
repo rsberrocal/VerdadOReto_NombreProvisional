@@ -1,9 +1,10 @@
-export class Users {
+export class Users{
     name;
     score;
-
-    constructor(name?) {
+    havePlayed;
+    constructor(name?){
         this.name = name;
         this.score = 0;
+        this.havePlayed = false;
     }
 }
