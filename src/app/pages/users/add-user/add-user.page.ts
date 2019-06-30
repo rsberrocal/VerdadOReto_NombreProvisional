@@ -34,8 +34,8 @@ export class AddUserPage implements OnInit {
         this.users = this.usersService.getUsersList();
     }
 
-    deleteUserEvent(event) {
-        this.usersService.removeUser(event);
+    deleteUserEvent(event: Users) {
+        this.usersService.removeUser(event.name);
     }
 
     userExists(userName) {
