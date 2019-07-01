@@ -2,7 +2,7 @@
   "Pruebas": [
     {
       "title": "BATALLA DE SABLES",
-      "description": "Haz una batalla de sables con {user]",
+      "description": "Haz una batalla de sables con {user}",
       "numPlayers": 2,
       "score": 4
     },
@@ -50,7 +50,7 @@
     },
     {
       "title": "???????????????",
-      "description": "Bebe del escote de {user] ",
+      "description": "Bebe del escote de {user} ",
       "numPlayers": 2,
       "score": 3
     },
@@ -80,7 +80,7 @@
     },
     {
       "title": "?????",
-      "description": "Cambiate la ropa con {user] si es del sexo opuesto ",
+      "description": "Cambiate la ropa con {user} si es del sexo opuesto ",
       "numPlayers": 2,
       "score": 3
     },

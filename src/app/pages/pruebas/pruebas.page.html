@@ -1,23 +1,52 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-title>VERDAD o RETO</ion-title>
-    </ion-toolbar>
+
+        <span>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="home"></ion-back-button>
+            </ion-buttons>
+
+            <ion-toolbar>
+                <ion-title text-center>VERDAD o RETO</ion-title>
+            </ion-toolbar>
+        </span>
+
+
 </ion-header>
 
 <ion-content>
+
     <ion-row>
         <ion-col size="12">
             <ion-item>RONDA {{ronda}}</ion-item>
         </ion-col>
     </ion-row>
     <ion-row>
-    <ion-col size="12">
-        <ion-item> {{jugadorP.name}}</ion-item>
-    </ion-col>
-    </ion-row>
-    <ion-row align-items-center="">
         <ion-col size="12">
-            <ion-label class = "Titulo" text-center>{{prueba.title}}</ion-label>
+            <ion-item> {{jugadorP.name}}</ion-item>
         </ion-col>
     </ion-row>
+    <ion-card>
+
+        <ion-row>
+            <ion-col size="6">
+                <ion-chip color="{{pruebaType[0]}}">Reto Nivel {{pruebaType[1]}}</ion-chip>
+            </ion-col>
+            <ion-col size="6" text-end>
+                <ion-chip color="tertiary"> + {{scoreP}} puntos</ion-chip>
+            </ion-col>
+        </ion-row>
+        <ion-row align-items-center="">
+            <ion-col size="12">
+                <ion-card-title text-center>{{prueba.title}}</ion-card-title>
+            </ion-col>
+        </ion-row>
+        <ion-row align-items-center="">
+            <ion-col size="12">
+                <ion-card-subtitle text-center>{{prueba.description}}</ion-card-subtitle>
+            </ion-col>
+        </ion-row>
+
+
+    </ion-card>
+
 </ion-content>
