@@ -33,7 +33,7 @@ export class VerdadORetoPage implements OnInit {
         //Example Promise return
         this.menu.enable(true, 'ranking')
             .then(() => this.menu.open('ranking'));
-        
+
     }
 
     getUsers(): Users[] {
