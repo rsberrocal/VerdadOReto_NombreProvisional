@@ -1,6 +1,6 @@
 <ion-app>
 
-    <ion-menu side="start" menuId="custom" class="my-custom-menu">
+    <ion-menu side="start" menuId="main" class="my-custom-menu">
         <ion-header>
             <ion-toolbar color="tertiary">
                 <ion-title>Menu</ion-title>
@@ -27,7 +27,7 @@
         </ion-content>
     </ion-menu>
 
-    <ion-menu side="end" type="push">
+    <ion-menu side="end" disabled="true" menuId="ranking" type="overlay">
         <app-ranking></app-ranking>
     </ion-menu>
 
