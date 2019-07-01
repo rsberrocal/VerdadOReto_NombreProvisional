@@ -18,6 +18,7 @@
     "prefer-const": false,
     "no-trailing-whitespace": false,
     "comment-format": false,
-    "triple-equals": false
+    "triple-equals": false,
+    "one-line": false
   }
 }
