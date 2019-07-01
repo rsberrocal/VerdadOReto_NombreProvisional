@@ -1,7 +1,4 @@
 <ion-header>
-
-
-
     <ion-toolbar>
         <ion-buttons slot="start">
             <ion-back-button defaultHref="home"></ion-back-button>
@@ -31,7 +28,7 @@
                 <ion-chip color="{{pruebaType[0]}}">Reto Nivel {{pruebaType[1]}}</ion-chip>
             </ion-col>
             <ion-col size="6" text-end>
-                <ion-chip color="tertiary"> + {{scoreP}} puntos</ion-chip>
+                <ion-chip color="tertiary"> + {{scoreP}}</ion-chip>
             </ion-col>
         </ion-row>
         <ion-row align-items-center="">
@@ -48,11 +45,13 @@
 
     </ion-card>
     <ion-row>
-        <ion-col size="6" text-left>
-            <ion-button color="medium">Skip</ion-button>
+        <ion-col size="1"></ion-col>
+        <ion-col size="5" text-left>
+            <ion-button class="skipButt" color="medium">Skip</ion-button>
         </ion-col>
-        <ion-col size="6" text-end>
-            <ion-button color="success">Accept</ion-button>
+        <ion-col size="5" text-end>
+            <ion-button  class ="acceptButt" color="success">Accept</ion-button>
         </ion-col>
+        <ion-col size="1"></ion-col>
     </ion-row>
 </ion-content>
