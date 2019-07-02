@@ -4,6 +4,7 @@ import {Users} from '../../shared/classes/users';
 import {CurrentPruebaService} from '../../core/services/current-prueba.service';
 import {PruebasService} from '../../core/services/pruebas.service';
 import {MenuController} from '@ionic/angular';
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-verdad-o-reto',
@@ -20,9 +21,11 @@ export class VerdadORetoPage implements OnInit {
         private userService: UsersService,
         private currentPrueba: CurrentPruebaService,
         private pruebasService: PruebasService,
-        private menu: MenuController) {
+        private menu: MenuController,
+        private router: Router) {
         this.user = this.getRandomUser();
         this.ronda = this.pruebasService.getRonda();
+        console.log("hola!");
     }
 
     ngOnInit() {
@@ -70,4 +73,10 @@ export class VerdadORetoPage implements OnInit {
         this.currentPrueba.setCurrentInfo(this.user, x);
         console.log('Holi');
     }
+    navigate(routerLink) {
+
+        this.router.navigate([routerLink], {replaceUrl: true});
+        //Aqui va el metodo para pasar a la siguiente ronda.
+    }
+
 }

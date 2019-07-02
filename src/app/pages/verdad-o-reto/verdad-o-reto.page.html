@@ -37,7 +37,7 @@
             <br>
             <ion-row>
                 <ion-col size="12" text-center>
-                    <ion-button class="vor" color="primary" routerLink="/pruebas" (click)="this.setCurrentInfo(1)">
+                    <ion-button class="vor" color="primary" (click)="this.setCurrentInfo(1); navigate('/pruebas')">
                         Verdad
                     </ion-button>
                 </ion-col>
@@ -65,17 +65,17 @@
 
 
                     <ion-col size="4" text-left>
-                        <ion-button class="diff" color="success" routerLink="/pruebas" (click)="this.setCurrentInfo(2)">
+                        <ion-button class="diff" color="success" (click)="this.setCurrentInfo(2); navigate('/pruebas')">
                             UPC
                         </ion-button>
                     </ion-col>
                     <ion-col size="4" text-center>
-                        <ion-button class="diff" color="warning" routerLink="/pruebas" (click)="this.setCurrentInfo(3)">
+                        <ion-button class="diff" color="warning" (click)="this.setCurrentInfo(3); navigate('/pruebas')">
                             Medium
                         </ion-button>
                     </ion-col>
                     <ion-col size="4" text-end>
-                        <ion-button class="diff" color="danger" routerLink="/pruebas" (click)="this.setCurrentInfo(4)">
+                        <ion-button class="diff" color="danger" (click)="this.setCurrentInfo(4); navigate('/pruebas')">
                             UB
                         </ion-button>
                     </ion-col>

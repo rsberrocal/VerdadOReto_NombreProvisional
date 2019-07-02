@@ -4,6 +4,8 @@ import {UsersService} from "../../core/services/users.service";
 import {Pruebas} from "../../shared/classes/pruebas";
 import {PruebasService} from "../../core/services/pruebas.service";
 import {CurrentPruebaService} from "../../core/services/current-prueba.service";
+import {Router} from "@angular/router";
+
 
 @Component({
     selector: 'app-pruebas',
@@ -19,7 +21,7 @@ export class PruebasPage implements OnInit {
     pruebaType = ["success", "RubenTonto"];
     newDescript: string;
 
-    constructor(private userService: UsersService, private pruebasService: PruebasService, private currentPrueba: CurrentPruebaService) {
+    constructor(private router: Router, private userService: UsersService, private pruebasService: PruebasService, private currentPrueba: CurrentPruebaService) {
         this.ronda = this.pruebasService.getRonda();
         this.scoreP = currentPrueba.getScore();
         this.jugadorP = currentPrueba.getCurrentUser();
@@ -27,6 +29,7 @@ export class PruebasPage implements OnInit {
         this.setSecondaryPlayers();
         this.replaceDescription();
         this.pruebaType = this.pruebaTypeSetter();
+
 
     }
 
@@ -97,12 +100,47 @@ export class PruebasPage implements OnInit {
         }
     }
 
-    replaceDescription(){
-        let oldstr= this.prueba.description
-        for(let i= 0; i < this.prueba.numPlayers-1;i++) {
+    replaceDescription() {
+        let oldstr = this.prueba.description
+        for (let i = 0; i < this.jugadoresS.length; i++) {
             oldstr = oldstr.toString().replace("{user}", this.jugadoresS[i].name);
         }
-        this.newDescript= oldstr;
+        this.newDescript = oldstr;
     }
-    //Aqui va el metodo para pasar a la siguiente ronda.
+
+    skip() {
+        this.jugadorP.havePlayed = true;
+    }
+
+    play() {
+        this.jugadorP.havePlayed = true;
+        this.jugadorP.score += this.scoreP;
+        for (let i = 0; i < this.jugadoresS.length; i++){
+            this.jugadoresS[i].score += this.scoreP;
+
+        }
+        console.log(this.jugadorP);
+        console.log(this.jugadoresS)
+    }
+    allUsersHavePlayed(): boolean{
+        for(let i =0; i<this.getUsers().length;i++){
+            if (this.getUsers()[i].havePlayed==false){
+                return false;
+            }
+        }
+        return true;
+    }
+    setPlayersNotPlayed(){
+        for(let i = 0; i<this.getUsers().length;i++){
+            this.userService.getUsersList()[i].havePlayed = false;
+        }
+    }
+    navigate(routerLink) {
+        if (this.allUsersHavePlayed()){
+            this.pruebasService.rondas+=1;
+            this.setPlayersNotPlayed()
+        }
+        this.router.navigate([routerLink], {replaceUrl: true});
+        //Aqui va el metodo para pasar a la siguiente ronda.
+    }
 }
