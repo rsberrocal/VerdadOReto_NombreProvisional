@@ -4,7 +4,8 @@
       "title": "BATALLA DE SABLES",
       "description": "Haz una batalla de sables con {user}",
       "numPlayers": 2,
-      "score": 4
+      "score": 4,
+      "image": "src/assets/img/reto4p_batalla de sables.png"
     },
     {
       "title": "Coma Etilico",
@@ -55,7 +56,7 @@
       "score": 3
     },
     {
-      "title": "Haste el fondo",
+      "title": "Hasta el fondo",
       "description": "Liate con {user} ",
       "numPlayers": 2,
       "score": 3
@@ -82,7 +83,8 @@
       "title": "?????",
       "description": "Cambiate la ropa con {user} si es del sexo opuesto ",
       "numPlayers": 2,
-      "score": 3
+      "score": 3,
+      "image": "src/assets/img/reto3p_cambiar ropa sexo opuesto.png"
     },
     {
       "title": "Cambio climatico",
@@ -188,7 +190,7 @@
     },
     {
       "title": "Arcoiris",
-      "description": "Todos incluyendote a ti se quitan la ropa del color de tu camiseta ",
+      "description": "Todos, incluyendote a ti, se quitan la ropa del color de tu camiseta ",
       "numPlayers": 1,
       "score": 2
     },
@@ -214,7 +216,8 @@
       "title": "Puro Perreo",
       "description": "Perrea una cancion con {user} ",
       "numPlayers": 2,
-      "score": 2
+      "score": 2,
+      "image": "src/assets/img/reto3p_puro perreo.png"
     },
     {
       "title": "Sandwich Puro Perreo",
@@ -286,7 +289,8 @@
       "title": "??",
       "description": "Dejale el mobil al de tu izquierda durante 30 segundos  ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "image": "src/assets/img/reto2p_dejar el mobil 30 sec.png"
     },
     {
       "title": "Has tenido cosas mas sucias en la boca y lo sabes",
@@ -398,7 +402,7 @@
     },
     {
       "title": "Masaje con final feliz",
-      "description": "Dale un masaje al 1 del ranking por una ronda  ",
+      "description": "Dale un masaje al primero del ranking por una ronda  ",
       "numPlayers": 1,
       "score": 2
     },
@@ -436,7 +440,8 @@
       "title": "Arte",
       "description": "Te has de dejar que te dibujen en el cuerpo  ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "image": "src/assets/img/reto2p_dejar dibujar cuerpo.png"
     },
     {
       "title": "No muerdas donde no es",
@@ -472,7 +477,8 @@
       "title": "Casa Katia",
       "description": "Haz un streaptease a las personas de tus lados  ",
       "numPlayers": 1,
-      "score": 3
+      "score": 3,
+      "image": "src/assets/img/reto3p_streaptease.png"
     },
     {
       "title": "A tortazo limpio",
@@ -533,8 +539,162 @@
       "description": "Hazle un chupeton a {user} en el cuello  ",
       "numPlayers": 2,
       "score": 3
+    },
+    {
+      "title": "¿Qué es lo más loco que has hecho por un chico o una chica?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Cuál es la cosa más embarazosa que tus padres te han pillado haciendo?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "Si pudieras elegir con quien dormirias esta noche",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "Cuenta algo que nadie sepa",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "Quien te cae peor",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "A quien matarias, con quien te casarias y a quien te follarias",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "Desvela tu placer prohibido (parafilia)",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Alguna vez has practicado besos con un espejo o con una mano?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Quién crees que es la persona peor vestida en esta sala?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Alguna vez te has sacado una foto sexy o desnudo/a?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Qué es lo más ilegal que has hecho en tu vida?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "Si solo pudieras escuchar una canción por el resto de tu vida, ¿cuál sería?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Quién es la persona que mas quieres?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Tienes algún mote ridículo?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Alguna vez te han pillado haciendo algo que no debías?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Qué parte de tu cuerpo te encanta y qué parte odias?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Como era el último vídeo porno que has visto?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Cuánto tiempo has pasado sin ducharte?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "Con quien tendrias una cita a solas de aqui (Quedad un dia)",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "Que harias si te quedas sin papel higienico",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Con cuántas personas te has acostado?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Cuántas personas has besado?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Con cuántas personas has tenido relaciones sexuales?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿A quién tienes más ganas de besar?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Cuál es tu mayor miedo en una relación?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
+    },
+    {
+      "title": "¿Cuál ha sido tu peor pesadilla?",
+      "description": "  ",
+      "numPlayers": 1,
+      "score": 1
     }
-
-
   ]
 }
