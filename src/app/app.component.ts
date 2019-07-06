@@ -31,7 +31,7 @@ export class AppComponent {
         this.menuController.enable(false,'ranking');
     }
 
-    setUsers(){
+    setRanking(){
 
     }
 }
