@@ -3,7 +3,7 @@
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title text-center>UB (Nombre provisional)</ion-title>
+        <ion-title text-center class="titleText" >UB (Nombre provisional)</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -25,25 +25,27 @@
         <!-- GAMES -->
         <ion-row>
             <ion-col text-center>
-                <ion-button class="homebutton" color="tertiary" (click)="navigate('/verdad-o-reto')">Verdad o Reto</ion-button>
+                <ion-button expand="block" size="large" color="tertiary" class="titleText" (click)="navigate('/verdad-o-reto')"><b>Verdad o Reto</b></ion-button>
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col text-center>
-                <ion-button class="homebutton" color="tertiary">Moneda</ion-button>
+                <ion-button expand="block" size="large" color="tertiary" class="titleText"><b>Moneda</b></ion-button>
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col text-center>
-                <ion-button class="homebutton" color="tertiary">Yo nunca</ion-button>
+                <ion-button expand="block" size="large" color="tertiary" class="titleText"><b>Yo nunca</b></ion-button>
             </ion-col>
         </ion-row>
         <!-- ADD USERS -->
         <ion-row>
-            <ion-col text-center>
-                <ion-button  color="primary" routerLink="/users/add-user">Añadir Participantes
+            <ion-col size = 1> </ion-col>
+            <ion-col text-center size = 10>
+                <ion-button class="titleText" expand="block" size="default" color="primary" routerLink="/users/add-user">Añadir Participantes
                 </ion-button>
             </ion-col>
+            <ion-col size = 1> </ion-col>
         </ion-row>
         <!-- Users Lists -->
         <ion-row>
