@@ -25,7 +25,6 @@ export class VerdadORetoPage implements OnInit {
         private router: Router) {
         this.user = this.getRandomUser();
         this.ronda = this.pruebasService.getRonda();
-        console.log('hola!');
     }
 
     ngOnInit() {
@@ -51,13 +50,6 @@ export class VerdadORetoPage implements OnInit {
             });
             let index = Math.floor(Math.random() * usersNotPlayed.length);
             return usersNotPlayed[index];
-            /*let freeUser = false;
-            while (!freeUser) {
-                let x = Math.floor(Math.random() * this.getUsers().length);
-                if (this.getUsers()[x].havePlayed == false) {
-                    return this.getUsers()[x];
-                }
-            }*/
         }
         //Aqui va el metodo para pasar a la siguiente ronda.
     }
@@ -77,11 +69,9 @@ export class VerdadORetoPage implements OnInit {
 
     setCurrentInfo(x: number): void {
         this.currentPrueba.setCurrentInfo(this.user, x);
-        console.log('Holi');
     }
 
     navigate(routerLink) {
-
         this.router.navigate([routerLink], {replaceUrl: true});
         //Aqui va el metodo para pasar a la siguiente ronda.
     }

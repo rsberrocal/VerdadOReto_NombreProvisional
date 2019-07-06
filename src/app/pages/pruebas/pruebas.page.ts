@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {Users} from "../../shared/classes/users";
-import {UsersService} from "../../core/services/users.service";
-import {Pruebas} from "../../shared/classes/pruebas";
-import {PruebasService} from "../../core/services/pruebas.service";
-import {CurrentPruebaService} from "../../core/services/current-prueba.service";
-import {Router} from "@angular/router";
+import {Users} from '../../shared/classes/users';
+import {UsersService} from '../../core/services/users.service';
+import {Pruebas} from '../../shared/classes/pruebas';
+import {PruebasService} from '../../core/services/pruebas.service';
+import {CurrentPruebaService} from '../../core/services/current-prueba.service';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -18,7 +18,7 @@ export class PruebasPage implements OnInit {
     jugadoresS: Users[] = [];
     scoreP: number;
     ronda: number;
-    pruebaType = ["success", "RubenTonto"];
+    pruebaType = ['success', 'RubenTonto'];
     newDescript: string;
 
     constructor(private router: Router, private userService: UsersService, private pruebasService: PruebasService, private currentPrueba: CurrentPruebaService) {
@@ -44,8 +44,6 @@ export class PruebasPage implements OnInit {
         let x;
         while (true) {
             x = Math.floor(Math.random() * this.getPruebasList().length);
-
-
             if (this.getPruebasList()[x].score == this.scoreP) {
                 return this.getPruebasList()[x];
 
@@ -57,16 +55,16 @@ export class PruebasPage implements OnInit {
     pruebaTypeSetter(): string[] {
         switch (this.scoreP) {
             case 1:
-                return ["primary", "Verdad"];
+                return ['primary', 'Verdad'];
 
             case 2:
-                return ["success", "Reto Nivel UPC"];
+                return ['success', 'Reto Nivel UPC'];
 
             case 3:
-                return ["warning", "Reto Nivel Medium"];
+                return ['warning', 'Reto Nivel Medium'];
 
             case 4:
-                return ["danger", "Reto Nivel UB"]
+                return ['danger', 'Reto Nivel UB'];
 
         }
     }
@@ -91,19 +89,14 @@ export class PruebasPage implements OnInit {
     }
 
     getRandomUser(): Users {
-        let freeUser = false;
-        while (freeUser == false) {
-            let x = Math.floor(Math.random() * this.getUsers().length);
-            if (this.getUsers()[x].havePlayed == false) {
-                return this.getUsers()[x];
-            }
-        }
+        let index = Math.floor(Math.random() * this.getUsers().length);
+        return this.getUsers()[index];
     }
 
     replaceDescription() {
-        let oldstr = this.prueba.description
+        let oldstr = this.prueba.description;
         for (let i = 0; i < this.jugadoresS.length; i++) {
-            oldstr = oldstr.toString().replace("{user}", this.jugadoresS[i].name);
+            oldstr = oldstr.toString().replace('{user}', this.jugadoresS[i].name);
         }
         this.newDescript = oldstr;
     }
@@ -115,30 +108,33 @@ export class PruebasPage implements OnInit {
     play() {
         this.jugadorP.havePlayed = true;
         this.jugadorP.score += this.scoreP;
-        for (let i = 0; i < this.jugadoresS.length; i++){
+        for (let i = 0; i < this.jugadoresS.length; i++) {
             this.jugadoresS[i].score += this.scoreP;
 
         }
         console.log(this.jugadorP);
-        console.log(this.jugadoresS)
+        console.log(this.jugadoresS);
     }
-    allUsersHavePlayed(): boolean{
-        for(let i =0; i<this.getUsers().length;i++){
-            if (this.getUsers()[i].havePlayed==false){
+
+    allUsersHavePlayed(): boolean {
+        for (let i = 0; i < this.getUsers().length; i++) {
+            if (this.getUsers()[i].havePlayed == false) {
                 return false;
             }
         }
         return true;
     }
-    setPlayersNotPlayed(){
-        for(let i = 0; i<this.getUsers().length;i++){
+
+    setPlayersNotPlayed() {
+        for (let i = 0; i < this.getUsers().length; i++) {
             this.userService.getUsersList()[i].havePlayed = false;
         }
     }
+
     navigate(routerLink) {
-        if (this.allUsersHavePlayed()){
-            this.pruebasService.rondas+=1;
-            this.setPlayersNotPlayed()
+        if (this.allUsersHavePlayed()) {
+            this.pruebasService.rondas += 1;
+            this.setPlayersNotPlayed();
         }
         this.router.navigate([routerLink], {replaceUrl: true});
         //Aqui va el metodo para pasar a la siguiente ronda.
