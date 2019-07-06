@@ -28,7 +28,7 @@
     </ion-menu>
 
     <ion-menu side="end" disabled="true" menuId="ranking" type="overlay" (ionDidClose)="disableMenu($event)" (ionWillOpen)="setRanking()" >
-        <app-ranking></app-ranking>
+        <app-ranking [usersList]="users"></app-ranking>
     </ion-menu>
 
     <ion-router-outlet main></ion-router-outlet>
