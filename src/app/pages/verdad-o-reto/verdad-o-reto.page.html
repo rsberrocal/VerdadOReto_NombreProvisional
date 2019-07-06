@@ -8,7 +8,7 @@
                 <ion-icon name="trophy"></ion-icon>
             </ion-button>
         </ion-buttons>
-        <ion-title text-center>Verdad o Reto</ion-title>
+        <ion-title text-center>VERDAD o RETO</ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -16,25 +16,30 @@
         <ion-row>
             <ion-col size="12">
                 <ion-item>
-                    <ion-label>Ronda {{ronda}}</ion-label>
+                    <ion-label color="dark">RONDA {{ronda}}</ion-label>
                 </ion-item>
             </ion-col>
         </ion-row>
         <ion-row>
-            <ion-col size="12">
+            <ion-col size="9">
                 <ion-item>
-                    <ion-label> {{user.name}} <span text-end>{{user.score}}</span></ion-label>
+                    <ion-label color="medium"> {{user.name}} </ion-label>
                 </ion-item>
             </ion-col>
-
+            <ion-col size="3">
+                <ion-item>
+                    <ion-label color="tertiary" text-center> {{user.score}} <ion-icon name="ribbon" slot="end"></ion-icon></ion-label>
+                </ion-item>
+            </ion-col>
         </ion-row>
+        <br>
         <div>
             <ion-row align-items-center>
                 <ion-col class="normalText" size="12" text-center>
                     elige
                 </ion-col>
             </ion-row>
-            <br>
+
             <ion-row>
                 <ion-col size="12" text-center>
                     <ion-button class="vor" color="primary" (click)="this.setCurrentInfo(1); navigate('/pruebas')">
@@ -71,7 +76,7 @@
                     </ion-col>
                     <ion-col size="4" text-center>
                         <ion-button class="diff" color="warning" (click)="this.setCurrentInfo(3); navigate('/pruebas')">
-                            Medium
+                            NORMAL
                         </ion-button>
                     </ion-col>
                     <ion-col size="4" text-end>
