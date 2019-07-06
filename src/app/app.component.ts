@@ -14,7 +14,8 @@ export class AppComponent {
         private platform: Platform,
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
-        private menuController: MenuController
+        private menuController: MenuController,
+        private users: U
     ) {
         this.initializeApp();
     }
@@ -28,5 +29,9 @@ export class AppComponent {
 
     disableMenu(event){
         this.menuController.enable(false,'ranking');
+    }
+
+    setUsers(){
+
     }
 }

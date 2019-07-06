@@ -5,6 +5,7 @@ import {Pruebas} from '../../shared/classes/pruebas';
 import {PruebasService} from '../../core/services/pruebas.service';
 import {CurrentPruebaService} from '../../core/services/current-prueba.service';
 import {Router} from '@angular/router';
+import {MenuController} from '@ionic/angular';
 
 
 @Component({
@@ -21,7 +22,12 @@ export class PruebasPage implements OnInit {
     pruebaType = ['success', 'RubenTonto'];
     newDescript: string;
 
-    constructor(private router: Router, private userService: UsersService, private pruebasService: PruebasService, private currentPrueba: CurrentPruebaService) {
+    constructor(
+        private router: Router,
+        private userService: UsersService,
+        private pruebasService: PruebasService,
+        private currentPrueba: CurrentPruebaService,
+        private menu: MenuController) {
         this.ronda = this.pruebasService.getRonda();
         this.scoreP = currentPrueba.getScore();
         this.jugadorP = currentPrueba.getCurrentUser();
@@ -101,7 +107,7 @@ export class PruebasPage implements OnInit {
 
     replaceDescription() {
         let oldstr = this.prueba.description;
-        for(let player of this.jugadoresS){
+        for (let player of this.jugadoresS) {
             oldstr = oldstr.toString().replace('{user}', player.name);
         }
         this.newDescript = oldstr;
@@ -114,7 +120,7 @@ export class PruebasPage implements OnInit {
     play() {
         this.jugadorP.havePlayed = true;
         this.jugadorP.score += this.scoreP;
-        for(let player of this.jugadoresS){
+        for (let player of this.jugadoresS) {
             player.score += this.scoreP;
         }
         console.log(this.jugadorP);
