@@ -46,7 +46,6 @@ export class PruebasPage implements OnInit {
             x = Math.floor(Math.random() * this.getPruebasList().length);
             if (this.getPruebasList()[x].score == this.scoreP) {
                 return this.getPruebasList()[x];
-
             }
         }
 
@@ -95,8 +94,8 @@ export class PruebasPage implements OnInit {
 
     replaceDescription() {
         let oldstr = this.prueba.description;
-        for (let i = 0; i < this.jugadoresS.length; i++) {
-            oldstr = oldstr.toString().replace('{user}', this.jugadoresS[i].name);
+        for(let player of this.jugadoresS){
+            oldstr = oldstr.toString().replace('{user}', player.name);
         }
         this.newDescript = oldstr;
     }
@@ -108,21 +107,11 @@ export class PruebasPage implements OnInit {
     play() {
         this.jugadorP.havePlayed = true;
         this.jugadorP.score += this.scoreP;
-        for (let i = 0; i < this.jugadoresS.length; i++) {
-            this.jugadoresS[i].score += this.scoreP;
-
+        for(let player of this.jugadoresS){
+            player.score += this.scoreP;
         }
         console.log(this.jugadorP);
         console.log(this.jugadoresS);
-    }
-
-    allUsersHavePlayed(): boolean {
-        for (let i = 0; i < this.getUsers().length; i++) {
-            if (this.getUsers()[i].havePlayed == false) {
-                return false;
-            }
-        }
-        return true;
     }
 
     setPlayersNotPlayed() {
@@ -132,7 +121,7 @@ export class PruebasPage implements OnInit {
     }
 
     navigate(routerLink) {
-        if (this.allUsersHavePlayed()) {
+        if (this.userService.allUsersHavePlayed()) {
             this.pruebasService.rondas += 1;
             this.setPlayersNotPlayed();
         }

@@ -44,7 +44,7 @@ export class VerdadORetoPage implements OnInit {
 
     getRandomUser(): Users {
         //Si no hay algun usuario que aun no ha jugado entra
-        if (!this.allUsersHavePlayed()) {
+        if (!this.userService.allUsersHavePlayed()) {
             let usersNotPlayed = this.getUsers().filter(function(user) {
                 return user.havePlayed == false;
             });
@@ -52,15 +52,6 @@ export class VerdadORetoPage implements OnInit {
             return usersNotPlayed[index];
         }
         //Aqui va el metodo para pasar a la siguiente ronda.
-    }
-
-    allUsersHavePlayed(): boolean {
-        for (let user of this.getUsers()) {
-            if (!user.havePlayed) {
-                return false;
-            }
-        }
-        return true;
     }
 
     isRetoTrue() {

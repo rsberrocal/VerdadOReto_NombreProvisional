@@ -27,7 +27,7 @@
         </ion-content>
     </ion-menu>
 
-    <ion-menu side="end" disabled="true" menuId="ranking" type="overlay">
+    <ion-menu side="end" disabled="true" menuId="ranking" type="overlay" (ionDidClose)="disableMenu($event)">
         <app-ranking></app-ranking>
     </ion-menu>
 

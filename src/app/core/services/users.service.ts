@@ -32,4 +32,13 @@ export class UsersService {
         }
     }
 
+    allUsersHavePlayed(): boolean {
+        for (let user of this.userList) {
+            if (!user.havePlayed) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
