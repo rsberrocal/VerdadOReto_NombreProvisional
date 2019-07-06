@@ -83,6 +83,13 @@ export class PruebasPage implements OnInit {
         }
     }
 
+    openRanking() {
+        //Example Promise return
+        this.menu.enable(true, 'ranking')
+            .then(() => this.menu.open('ranking'));
+
+    }
+
     getUsers(): Users[] {
         return this.userService.getUsersList();
     }
