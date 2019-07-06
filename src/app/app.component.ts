@@ -46,6 +46,9 @@ export class AppComponent {
     }
 
     setRanking() {
-        this.users = this.userService.getUsersList();
+        this.users = this.userService.getUsersList().sort(function (a, b) {
+            return b.score - a.score
+        });
     }
+
 }

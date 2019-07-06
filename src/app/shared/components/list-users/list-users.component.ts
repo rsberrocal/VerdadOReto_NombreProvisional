@@ -10,7 +10,9 @@ export class ListUsersComponent implements OnInit {
     @Input() users: Users[];
 
     @Output() deleteEvent = new EventEmitter();
-    constructor() {
+    constructor()
+    {
+        console.log(this.users);
     }
 
     ngOnInit() {
