@@ -4,7 +4,7 @@ import {Users} from '../../shared/classes/users';
 import {CurrentPruebaService} from '../../core/services/current-prueba.service';
 import {PruebasService} from '../../core/services/pruebas.service';
 import {MenuController} from '@ionic/angular';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-verdad-o-reto',
@@ -25,7 +25,7 @@ export class VerdadORetoPage implements OnInit {
         private router: Router) {
         this.user = this.getRandomUser();
         this.ronda = this.pruebasService.getRonda();
-        console.log("hola!");
+        console.log('hola!');
     }
 
     ngOnInit() {
@@ -44,21 +44,27 @@ export class VerdadORetoPage implements OnInit {
     }
 
     getRandomUser(): Users {
+        //Si no hay algun usuario que aun no ha jugado entra
         if (!this.allUsersHavePlayed()) {
-            let freeUser = false;
-            while (freeUser == false) {
+            let usersNotPlayed = this.getUsers().filter(function(user) {
+                return user.havePlayed == false;
+            });
+            let index = Math.floor(Math.random() * usersNotPlayed.length);
+            return usersNotPlayed[index];
+            /*let freeUser = false;
+            while (!freeUser) {
                 let x = Math.floor(Math.random() * this.getUsers().length);
                 if (this.getUsers()[x].havePlayed == false) {
                     return this.getUsers()[x];
                 }
-            }
+            }*/
         }
         //Aqui va el metodo para pasar a la siguiente ronda.
     }
 
     allUsersHavePlayed(): boolean {
-        for (let i = 0; i < this.getUsers().length; i++) {
-            if (this.getUsers()[i].havePlayed == false) {
+        for (let user of this.getUsers()) {
+            if (!user.havePlayed) {
                 return false;
             }
         }
@@ -73,6 +79,7 @@ export class VerdadORetoPage implements OnInit {
         this.currentPrueba.setCurrentInfo(this.user, x);
         console.log('Holi');
     }
+
     navigate(routerLink) {
 
         this.router.navigate([routerLink], {replaceUrl: true});
