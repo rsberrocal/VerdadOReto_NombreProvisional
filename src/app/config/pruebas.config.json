@@ -5,7 +5,7 @@
       "description": "Haz una batalla de sables con {user}",
       "numPlayers": 2,
       "score": 4,
-      "image": "src/assets/img/reto4p_batalla de sables.png"
+      "image": "/assets/img/reto4p_batalla de sables.png"
     },
     {
       "title": "Coma Etilico",
@@ -84,7 +84,7 @@
       "description": "Cambiate la ropa con {user} si es del sexo opuesto ",
       "numPlayers": 2,
       "score": 3,
-      "image": "src/assets/img/reto3p_cambiar ropa sexo opuesto.png"
+      "image": "assets/img/reto3p_cambiar ropa sexo opuesto.png"
     },
     {
       "title": "Cambio climatico",
@@ -217,7 +217,7 @@
       "description": "Perrea una cancion con {user} ",
       "numPlayers": 2,
       "score": 2,
-      "image": "src/assets/img/reto3p_puro perreo.png"
+      "image": "/assets/img/reto3p_puro perreo.png"
     },
     {
       "title": "Sandwich Puro Perreo",
@@ -290,7 +290,7 @@
       "description": "Dejale el mobil al de tu izquierda durante 30 segundos  ",
       "numPlayers": 1,
       "score": 2,
-      "image": "src/assets/img/reto2p_dejar el mobil 30 sec.png"
+      "image": "/assets/img/reto2p_dejar el mobil 30 sec.png"
     },
     {
       "title": "Has tenido cosas mas sucias en la boca y lo sabes",
@@ -441,7 +441,7 @@
       "description": "Te has de dejar que te dibujen en el cuerpo  ",
       "numPlayers": 1,
       "score": 2,
-      "image": "src/assets/img/reto2p_dejar dibujar cuerpo.png"
+      "image": "/assets/img/reto2p_dejar dibujar cuerpo.png"
     },
     {
       "title": "No muerdas donde no es",
@@ -478,7 +478,7 @@
       "description": "Haz un streaptease a las personas de tus lados  ",
       "numPlayers": 1,
       "score": 3,
-      "image": "src/assets/img/reto3p_streaptease.png"
+      "image": "/assets/img/reto3p_streaptease.png"
     },
     {
       "title": "A tortazo limpio",
