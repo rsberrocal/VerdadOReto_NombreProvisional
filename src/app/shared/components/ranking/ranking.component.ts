@@ -12,6 +12,7 @@ export class RankingComponent implements OnInit,OnChanges {
     @Input()usersList: Users[] = [];
 
     constructor(private userService: UsersService) {
+        console.log(this.usersList);
     }
 
     ionViewWillEnter() {
