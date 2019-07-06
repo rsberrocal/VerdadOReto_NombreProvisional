@@ -15,7 +15,7 @@ export class AppComponent {
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
         private menuController: MenuController,
-        private users: U
+        //private users: User
     ) {
         this.initializeApp();
     }
