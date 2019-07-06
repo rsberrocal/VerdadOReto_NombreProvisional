@@ -5,6 +5,7 @@ import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {Users} from './shared/classes/users';
 import {UsersService} from './core/services/users.service';
+import {Router, Routes} from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -18,8 +19,13 @@ export class AppComponent {
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
         private menuController: MenuController,
+<<<<<<< HEAD
         private userService: UsersService,
         private alertController: AlertController
+=======
+        private router: Router,
+        private userService: UsersService
+>>>>>>> c76bd4d1d7aa9829a56b52b8faf4e24771b87f67
     ) {
         this.initializeApp();
     }
@@ -33,6 +39,15 @@ export class AppComponent {
 
     disableMenu(event) {
         this.menuController.enable(false, 'ranking');
+    }
+
+    goTo(route){
+        this.router.navigate([route]);
+        this.menuController.close('start');
+    }
+
+    exit(){
+        //navigator['app'].exitApp();
     }
 
     setRanking() {

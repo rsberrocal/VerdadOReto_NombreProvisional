@@ -5,11 +5,11 @@
       "description": "Haz una batalla de sables con {user}",
       "numPlayers": 2,
       "score": 4,
-      "image": "src/assets/img/reto4p_batalla de sables.png"
+      "image": "/assets/img/reto4p_batalla de sables.png"
     },
     {
-      "title": "Coma Etilico",
-      "description": "Bebete un cubata entero",
+      "title": "Coma Etílico",
+      "description": "Bébete un cubata entero",
       "numPlayers": 1,
       "score": 4
     },
@@ -20,32 +20,32 @@
       "score": 4
     },
     {
-      "title": "Sacatela",
-      "description": "Bajate el pantalon y la ropa interior durante un breve instante ",
+      "title": "Sácatela",
+      "description": "Bájate el pantalón y la ropa interior durante un breve instante ",
       "numPlayers": 1,
       "score": 4
     },
     {
-      "title": "Que St Hilari este contigo",
+      "title": "Que St Hilari esté contigo",
       "description": "Hazte un St Hilari de lo que te quede ",
       "numPlayers": 1,
       "score": 3
     },
     {
       "title": "Bañito pa despejarse",
-      "description": "Tirate a la piscina con ropa ",
+      "description": "Tírate a la piscina con ropa ",
       "numPlayers": 1,
       "score": 3
     },
     {
       "title": "Cumshot",
-      "description": "El jugador de tu izquierda te dara un tartazo de nata en la cara ",
+      "description": "El jugador de tu izquierda te dará un tartazo de nata en la cara ",
       "numPlayers": 1,
       "score": 3
     },
     {
       "title": "Cambio de vida",
-      "description": "Cambiate la ropa con {user} si es del sexo opuesto ",
+      "description": "Cámbiate la ropa con {user} si es del sexo opuesto ",
       "numPlayers": 2,
       "score": 3
     },
@@ -57,13 +57,13 @@
     },
     {
       "title": "Hasta el fondo",
-      "description": "Liate con {user} ",
+      "description": "Líate con {user} ",
       "numPlayers": 2,
       "score": 3
     },
     {
       "title": "Llamada de emergencia",
-      "description": "Llama a quien quieras por telefono y convencele para que tengais sexo ",
+      "description": "Llama a quien quieras por teléfono y convencele para que tengáis sexo ",
       "numPlayers": 1,
       "score": 3
     },
@@ -75,19 +75,19 @@
     },
     {
       "title": "Full sexy",
-      "description": "Quedate en ropa interior 1 ronda ",
+      "description": "Quédate en ropa interior 1 ronda ",
       "numPlayers": 1,
       "score": 3
     },
     {
       "title": "?????",
-      "description": "Cambiate la ropa con {user} si es del sexo opuesto ",
+      "description": "Cámbiate la ropa con {user} si es del sexo opuesto ",
       "numPlayers": 2,
       "score": 3,
-      "image": "src/assets/img/reto3p_cambiar ropa sexo opuesto.png"
+      "image": "assets/img/reto3p_cambiar ropa sexo opuesto.png"
     },
     {
-      "title": "Cambio climatico",
+      "title": "Cambio climático",
       "description": "Haz el IceBucket Challenge ",
       "numPlayers": 1,
       "score": 3
@@ -106,25 +106,25 @@
     },
     {
       "title": "Salsa Tequila Corazon",
-      "description": "Bebete un chupito de Tequila con la sal en el cuello de {user} y el limon en su boca ",
+      "description": "Bébete un chupito de Tequila con la sal en el cuello de {user} y el limón en su boca ",
       "numPlayers": 2,
       "score": 3
     },
     {
       "title": "El caloret",
-      "description": "Quitate una pieza de ropa ",
+      "description": "Quítate una pieza de ropa ",
       "numPlayers": 1,
       "score": 2
     },
     {
       "title": "TGV",
-      "description": "Bebete un chupito ",
+      "description": "Bébete un chupito ",
       "numPlayers": 1,
       "score": 2
     },
     {
       "title": "Foto traviesa",
-      "description": "Hazte una foto y enviasela a tu ultima busqueda de insta ",
+      "description": "Hazte una foto y envíasela a tu última búsqueda de insta ",
       "numPlayers": 1,
       "score": 2
     },
@@ -135,38 +135,38 @@
       "score": 2
     },
     {
-      "title": "Sombra aqui sombra alla",
+      "title": "Sombra aquí sombra allá",
       "description": "El jugador de tu izquierda te ha de pintar los labios ",
       "numPlayers": 1,
       "score": 2
     },
     {
-      "title": "Fabrica de cucuruchos",
-      "description": "Metete un hielo por dentro de la ropa interior ",
+      "title": "Fábrica de cucuruchos",
+      "description": "Métete un hielo por dentro de la ropa interior ",
       "numPlayers": 1,
       "score": 2
     },
     {
       "title": "Karaoke 10€",
-      "description": "Canta una cancion a capella con {user} ",
+      "description": "Canta una canción a capella con {user} ",
       "numPlayers": 2,
       "score": 2
     },
     {
-      "title": "Afinadisimo",
+      "title": "Afinadísimo",
       "description": "Dale una cachetada a {user} ",
       "numPlayers": 2,
       "score": 2
     },
     {
-      "title": "Es el movil",
-      "description": "Sientate encima de {user} durante 1 ronda ",
+      "title": "Es el móvil",
+      "description": "Siéntate encima de {user} durante 1 ronda ",
       "numPlayers": 2,
       "score": 2
     },
     {
       "title": "Lee Sin",
-      "description": "Vendate los ojos durante 1 ronda ",
+      "description": "Véndate los ojos durante 1 ronda ",
       "numPlayers": 1,
       "score": 2
     },
@@ -178,7 +178,7 @@
     },
     {
       "title": "Top Secret",
-      "description": "Vete a otra habitacion con {user} 5 minutos ",
+      "description": "Vete a otra habitación con {user} 5 minutos ",
       "numPlayers": 2,
       "score": 2
     },
@@ -190,19 +190,19 @@
     },
     {
       "title": "Arcoiris",
-      "description": "Todos, incluyendote a ti, se quitan la ropa del color de tu camiseta ",
+      "description": "Todos, incluyéndote a ti, se quitan la ropa del color de tu camiseta ",
       "numPlayers": 1,
       "score": 2
     },
     {
       "title": "Streeper",
-      "description": "Ponte encima de {user} y quitale la camiseta ",
+      "description": "Ponte encima de {user} y quítale la camiseta ",
       "numPlayers": 2,
       "score": 2
     },
     {
       "title": "Dracarys",
-      "description": "Come lo mas picante que tengas ",
+      "description": "Come lo más picante que tengas ",
       "numPlayers": 1,
       "score": 2
     },
@@ -214,10 +214,10 @@
     },
     {
       "title": "Puro Perreo",
-      "description": "Perrea una cancion con {user} ",
+      "description": "Perrea una canción con {user} ",
       "numPlayers": 2,
       "score": 2,
-      "image": "src/assets/img/reto3p_puro perreo.png"
+      "image": "/assets/img/reto3p_puro perreo.png"
     },
     {
       "title": "Sandwich Puro Perreo",
@@ -227,18 +227,18 @@
     },
     {
       "title": "Patada voladora",
-      "description": "Te han de mezclar en un chupito bebidas alcoholicas random ",
+      "description": "Te han de mezclar en un chupito bebidas alcohólicas random ",
       "numPlayers": 1,
       "score": 2
     },
     {
       "title": "Un Xavi",
-      "description": "Ignora a {user} hasta que te salga un reto con el, si lo haces bebes ",
+      "description": "Ignora a {user} hasta que te salga un reto con él, si lo haces bebes ",
       "numPlayers": 2,
       "score": 2
     },
     {
-      "title": "Ojala a David",
+      "title": "Ojalá a David",
       "description": "No hables en 1 ronda, si lo haces bebes  ",
       "numPlayers": 2,
       "score": 2
@@ -251,7 +251,7 @@
     },
     {
       "title": "Richi",
-      "description": "Abre al contacto con el que tengas la conversacion mas antigua  ",
+      "description": "Abre al contacto con el que tengas la conversación mas antigua  ",
       "numPlayers": 1,
       "score": 2
     },
@@ -263,7 +263,7 @@
     },
     {
       "title": "And the winner is...",
-      "description": "Liate con {user} y con {user} y di quien lo hace mejor  ",
+      "description": "Líate con {user} y con {user} y di quién lo hace mejor  ",
       "numPlayers": 3,
       "score": 3
     },
@@ -281,56 +281,56 @@
     },
     {
       "title": "Dobby es libre",
-      "description": "Huele el calcetin del de tu izquierda  ",
+      "description": "Huele el calcetín del de tu izquierda  ",
       "numPlayers": 1,
       "score": 3
     },
     {
       "title": "??",
-      "description": "Dejale el mobil al de tu izquierda durante 30 segundos  ",
+      "description": "Déjale el móvil al de tu izquierda durante 30 segundos  ",
       "numPlayers": 1,
       "score": 2,
-      "image": "src/assets/img/reto2p_dejar el mobil 30 sec.png"
+      "image": "/assets/img/reto2p_dejar el mobil 30 sec.png"
     },
     {
-      "title": "Has tenido cosas mas sucias en la boca y lo sabes",
+      "title": "Has tenido cosas más sucias en la boca y lo sabes",
       "description": "Lame el suelo  ",
       "numPlayers": 1,
       "score": 4
     },
     {
-      "title": "O dubi du quiero ser como tu",
+      "title": "O dubi du quiero ser como tú",
       "description": "Imita durante una ronda al de tu izquierda  ",
       "numPlayers": 1,
       "score": 2
     },
     {
-      "title": "¿A quien te follarias?",
+      "title": "¿A quién te follarías?",
       "description": " ",
       "numPlayers": 1,
       "score": 1
     },
     {
-      "title": "¿Con quien te liarias?",
+      "title": "¿Con quién te liarías?",
       "description": " ",
       "numPlayers": 1,
       "score": 1
     },
     {
-      "title": "¿Con quien vivirias?",
+      "title": "¿Con quién vivirías?",
       "description": " ",
       "numPlayers": 1,
       "score": 1
     },
     {
       "title": "Send nudes",
-      "description": "Enseña la galeria al de tu izquierda  ",
+      "description": "Enseña la galería al de tu izquierda  ",
       "numPlayers": 1,
       "score": 2
     },
     {
       "title": "Como Adan y Eva",
-      "description": "Tirate desnudo a la piscina  ",
+      "description": "Tírate desnudo a la piscina  ",
       "numPlayers": 1,
       "score": 4
     },
@@ -341,31 +341,31 @@
       "score": 4
     },
     {
-      "title": "Ojala ser precoz",
+      "title": "Ojalá ser precoz",
       "description": "Juega a la galleta con {user} y {user}  ",
       "numPlayers": 3,
       "score": 4
     },
     {
       "title": "La calle bota fuego",
-      "description": "Deja que te quemen el vello de algun sitio  ",
+      "description": "Deja que te quemen el vello de algún sitio  ",
       "numPlayers": 1,
       "score": 3
     },
     {
-      "title": "Michelin",
+      "title": "Michelín",
       "description": "Ponte la camiseta de todo el mundo  ",
       "numPlayers": 1,
       "score": 3
     },
     {
-      "title": "¿Como te gustan los huevos?",
+      "title": "¿Cómo te gustan los huevos?",
       "description": "Aplasta un huevo con la frente  ",
       "numPlayers": 1,
       "score": 3
     },
     {
-      "title": "5 estrellas michelin",
+      "title": "5 estrellas michelín",
       "description": "Te han de hacer una comida y te la has de comer  ",
       "numPlayers": 1,
       "score": 2
@@ -377,8 +377,8 @@
       "score": 2
     },
     {
-      "title": "Moises",
-      "description": "Dar la vuelta a la piscina con las gafas de xavi  ",
+      "title": "Moisés",
+      "description": "Dar la vuelta a la piscina con las gafas de Xavi  ",
       "numPlayers": 1,
       "score": 2
     },
@@ -395,7 +395,7 @@
       "score": 4
     },
     {
-      "title": "Duumbo",
+      "title": "Dumbo",
       "description": "Lame la oreja del de tu izquierda  ",
       "numPlayers": 1,
       "score": 4
@@ -407,14 +407,14 @@
       "score": 2
     },
     {
-      "title": "Penetracion",
+      "title": "Penetración",
       "description": "Deja que te te hagan un piercing donde quieras  ",
       "numPlayers": 1,
       "score": 4
     },
     {
-      "title": "Estas como una cabra",
-      "description": "Come cesped  ",
+      "title": "Estás como una cabra",
+      "description": "Come césped  ",
       "numPlayers": 1,
       "score": 3
     },
@@ -426,44 +426,44 @@
     },
     {
       "title": "La confianza da asco",
-      "description": "{user} te ha de agarras tus partes  ",
+      "description": "{user} te ha de agarrar tus partes  ",
       "numPlayers": 2,
       "score": 4
     },
     {
       "title": "Paliza gitana",
-      "description": "Te hacen un pasillo y te dan de collejas hasta que llegue al final  ",
+      "description": "Te hacen un pasillo y te dan de collejas hasta que llegues al final  ",
       "numPlayers": 1,
       "score": 3
     },
     {
       "title": "Arte",
-      "description": "Te has de dejar que te dibujen en el cuerpo  ",
+      "description": "Has de dejar que te dibujen en el cuerpo  ",
       "numPlayers": 1,
       "score": 2,
-      "image": "src/assets/img/reto2p_dejar dibujar cuerpo.png"
+      "image": "/assets/img/reto2p_dejar dibujar cuerpo.png"
     },
     {
       "title": "No muerdas donde no es",
-      "description": "Come un macarron del pecho de {user}  ",
+      "description": "Come un macarrón del pecho de {user}  ",
       "numPlayers": 2,
       "score": 3
     },
     {
-      "title": "Mortadelo y Filemon",
+      "title": "Mortadelo y Filemón",
       "description": "Haz un mortadelo a {user} ",
       "numPlayers": 2,
       "score": 4
     },
     {
       "title": "No te pases",
-      "description": "Muerdele el pezon a {user}  ",
+      "description": "Muérdele el pezón a {user}  ",
       "numPlayers": 2,
       "score": 3
     },
     {
       "title": "",
-      "description": "Deja que te quemen el vello de algun sitio  ",
+      "description": "Deja que te quemen el vello de algún sitio  ",
       "numPlayers": 1,
       "score": 3
     },
@@ -478,11 +478,11 @@
       "description": "Haz un streaptease a las personas de tus lados  ",
       "numPlayers": 1,
       "score": 3,
-      "image": "src/assets/img/reto3p_streaptease.png"
+      "image": "/assets/img/reto3p_streaptease.png"
     },
     {
       "title": "A tortazo limpio",
-      "description": "Haz una pelea de tortas con {user} el que pierda bebe  ",
+      "description": "Haz una pelea de tortas con {user} y el que pierda bebe  ",
       "numPlayers": 2,
       "score": 3
     },
@@ -493,14 +493,14 @@
       "score": 4
     },
     {
-      "title": "Ya no seras mas otaco",
-      "description": "Estirate y que te frieguen  ",
+      "title": "Ya no serás mas otaco",
+      "description": "Estírate y que te frieguen  ",
       "numPlayers": 1,
       "score": 3
     },
     {
-      "title": "Acido Sulfurico",
-      "description": "Comete medio limon  ",
+      "title": "Ácido Sulfúrico",
+      "description": "Cómete medio limón  ",
       "numPlayers": 1,
       "score": 2
     },
@@ -517,8 +517,8 @@
       "score": 4
     },
     {
-      "title": "Secuesto",
-      "description": "Encierrate en el maletero con {user} 1 ronda  ",
+      "title": "Secuestro",
+      "description": "Enciérrate en el maletero con {user} 1 ronda  ",
       "numPlayers": 2,
       "score": 3
     },
@@ -536,7 +536,7 @@
     },
     {
       "title": "Vampiro",
-      "description": "Hazle un chupeton a {user} en el cuello  ",
+      "description": "Hazle un chupetón a {user} en el cuello  ",
       "numPlayers": 2,
       "score": 3
     },
@@ -553,7 +553,7 @@
       "score": 1
     },
     {
-      "title": "Si pudieras elegir con quien dormirias esta noche",
+      "title": "Si pudieras elegir, ¿con quién dormirías esta noche",
       "description": "  ",
       "numPlayers": 1,
       "score": 1
@@ -565,13 +565,13 @@
       "score": 1
     },
     {
-      "title": "Quien te cae peor",
+      "title": "¿Quién te cae peor?",
       "description": "  ",
       "numPlayers": 1,
       "score": 1
     },
     {
-      "title": "A quien matarias, con quien te casarias y a quien te follarias",
+      "title": "¿A quien matarías, con quién te casarías y a quién te follarías?",
       "description": "  ",
       "numPlayers": 1,
       "score": 1
@@ -613,7 +613,7 @@
       "score": 1
     },
     {
-      "title": "¿Quién es la persona que mas quieres?",
+      "title": "¿Quién es la persona que más quieres?",
       "description": "  ",
       "numPlayers": 1,
       "score": 1
@@ -649,13 +649,13 @@
       "score": 1
     },
     {
-      "title": "Con quien tendrias una cita a solas de aqui (Quedad un dia)",
+      "title": "¿Con quién tendrías una cita a solas de aquí?(Quedad un día)",
       "description": "  ",
       "numPlayers": 1,
       "score": 1
     },
     {
-      "title": "Que harias si te quedas sin papel higienico",
+      "title": "¿Qué harías si te quedas sin papel higiénico",
       "description": "  ",
       "numPlayers": 1,
       "score": 1

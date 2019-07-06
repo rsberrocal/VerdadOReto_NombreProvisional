@@ -3,6 +3,7 @@ export class Pruebas {
     description;
     numPlayers;
     score;
+    image;
 
     constructor() {
     }
