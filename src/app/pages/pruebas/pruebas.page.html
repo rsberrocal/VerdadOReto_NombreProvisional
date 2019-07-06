@@ -8,7 +8,7 @@
                 <ion-icon name="trophy"></ion-icon>
             </ion-button>
         </ion-buttons>
-        <ion-title text-center>VERDAD o RETO</ion-title>
+        <ion-title text-center class="titleText">VERDAD o RETO</ion-title>
     </ion-toolbar>
 
 
@@ -18,12 +18,19 @@
 
     <ion-row>
         <ion-col size="12">
-            <ion-item>RONDA {{ronda}}</ion-item>
+            <ion-item> <b> RONDA {{ronda}} </b> </ion-item>
         </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col size="12">
-            <ion-item> {{jugadorP.name}}</ion-item>
+        <ion-col size="9">
+            <ion-item>
+                <ion-label class="titleText" color="medium"> {{jugadorP.name}} </ion-label>
+            </ion-item>
+        </ion-col>
+        <ion-col size="3">
+            <ion-item>
+                <ion-label class="titleText" color="tertiary" text-center> {{jugadorP.score}} <ion-icon name="ribbon" slot="end"></ion-icon></ion-label>
+            </ion-item>
         </ion-col>
     </ion-row>
     <ion-card>
