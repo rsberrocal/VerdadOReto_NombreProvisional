@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 
-import {MenuController, Platform} from '@ionic/angular';
+import {AlertController, MenuController, Platform} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {Users} from './shared/classes/users';
@@ -18,7 +18,8 @@ export class AppComponent {
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
         private menuController: MenuController,
-        private userService: UsersService
+        private userService: UsersService,
+        private alertController: AlertController
     ) {
         this.initializeApp();
     }
@@ -39,5 +40,31 @@ export class AppComponent {
             return b.score - a.score
         });
     }
+    resetGame(){
+        this.users = [];
+        this.userService.userList = [];
+    }
+    async presentAlert(header: string, subHeader: string) {
+        const alert = await this.alertController.create({
+            header: header,
+            subHeader: subHeader,
+            buttons: [
+                {
+                    text: 'Cancel',
+                    role: 'cancel',
+                    cssClass: 'secondary',
+                    handler: (blah) => {
+                        console.log('Confirm Cancel: blah');
+                    }
+                }, {
+                    text: 'Okay',
+                    handler: () => {
+                        console.log('Confirm Okay');
+                    }
+                }
+            ]
+        });
 
+        await alert.present();
+    }
 }
