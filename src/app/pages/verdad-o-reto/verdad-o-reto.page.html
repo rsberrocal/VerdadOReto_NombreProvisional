@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
         <ion-buttons slot="start">
-            <ion-back-button defaultHref="home"></ion-back-button>
+            <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-buttons slot="end">
             <ion-button color="warning" (click)="openRanking()">
@@ -42,7 +42,7 @@
 
             <ion-row>
                 <ion-col size="12" text-center>
-                    <ion-button class="vor" color="primary" (click)="this.setCurrentInfo(1); navigate('/pruebas')">
+                    <ion-button color="primary" expand="block" size="large" (click)="this.setCurrentInfo(1); navigate('/pruebas')">
                         Verdad
                     </ion-button>
                 </ion-col>
@@ -67,8 +67,6 @@
                 </ion-row>
                 <br>
                 <ion-row>
-
-
                     <ion-col size="4" text-left>
                         <ion-button class="diff" color="success" (click)="this.setCurrentInfo(2); navigate('/pruebas')">
                             UPC
