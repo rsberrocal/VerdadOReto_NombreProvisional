@@ -18,18 +18,22 @@
 
     <ion-row>
         <ion-col size="12">
-            <ion-item> <b> RONDA {{ronda}} </b> </ion-item>
+            <ion-item>
+                <ion-label color="dark" class="subtitleText"><b> RONDA {{ronda}} </b></ion-label>
+            </ion-item>
         </ion-col>
     </ion-row>
     <ion-row>
         <ion-col size="9">
             <ion-item>
-                <ion-label class="titleText" color="medium"> {{jugadorP.name}} </ion-label>
+                <ion-label class="titleText" color="medium"> <ion-icon name="person"></ion-icon> {{jugadorP.name}} </ion-label>
             </ion-item>
         </ion-col>
         <ion-col size="3">
             <ion-item>
-                <ion-label class="titleText" color="tertiary" text-center> {{jugadorP.score}} <ion-icon name="ribbon" slot="end"></ion-icon></ion-label>
+                <ion-label class="titleText" color="tertiary" text-center> {{jugadorP.score}}
+                    <ion-icon name="ribbon" slot="end"></ion-icon>
+                </ion-label>
             </ion-item>
         </ion-col>
     </ion-row>
@@ -45,24 +49,26 @@
         </ion-row>
         <ion-row align-items-center="">
             <ion-col size="12">
-                <ion-card-title text-center>{{prueba.title}}</ion-card-title>
+                <ion-card-title text-center class="titleText">{{prueba.title}}</ion-card-title>
             </ion-col>
         </ion-row>
         <ion-row align-items-center="">
             <ion-col size="12">
-                <ion-card-subtitle text-center>{{newDescript}}</ion-card-subtitle>
+                <ion-card-subtitle text-center class="subtitleText">{{newDescript}}</ion-card-subtitle>
             </ion-col>
         </ion-row>
 
 
     </ion-card>
     <ion-row>
-        <ion-col size="1"></ion-col>
-        <ion-col size="5" text-left>
-            <ion-button class="skipButt" color="medium" (click)="skip(); navigate('/verdad-o-reto')">Skip</ion-button>
+        <ion-col size="1"> </ion-col>
+        <ion-col size="4" text-left>
+            <ion-button class="titleText" size="default" expand="block" color="medium" (click)="skip(); navigate('/verdad-o-reto')">Skip</ion-button>
         </ion-col>
+        <ion-col size="1"> </ion-col>
         <ion-col size="5" text-end>
-            <ion-button  class ="acceptButt" color="success" (click)="play(); navigate('/verdad-o-reto')">Accept</ion-button>
+            <ion-button class="titleText" size="default" expand="block" color="success" (click)="play(); navigate('/verdad-o-reto')">Accept
+            </ion-button>
         </ion-col>
         <ion-col size="1"></ion-col>
     </ion-row>

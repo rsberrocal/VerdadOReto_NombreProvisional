@@ -66,7 +66,7 @@ export class PruebasPage implements OnInit {
                 return ['success', 'Reto Nivel UPC'];
 
             case 3:
-                return ['warning', 'Reto Nivel Medium'];
+                return ['warning', 'Reto Nivel Normal'];
 
             case 4:
                 return ['danger', 'Reto Nivel UB'];
