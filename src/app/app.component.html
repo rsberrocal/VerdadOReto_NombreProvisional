@@ -8,20 +8,20 @@
         </ion-header>
         <ion-content>
             <ion-list>
-                <ion-item routerLink="/home">
+                <ion-item (click)="goTo('/home')" >
                     <ion-icon name="home"></ion-icon>&nbsp;Inicio
                 </ion-item>
-                <ion-item routerLink="/users">
+                <!-- <ion-item (click)="goTo('/home')" >
                     <ion-icon name="contacts"></ion-icon>&nbsp;Participantes
                 </ion-item>
                 <ion-item>
-                    <ion-icon name="swap"></ion-icon>&nbsp;Cambiar Juego
+                    <ion-icon (click)="goTo('/home')" name="swap"></ion-icon>&nbsp;Cambiar Juego
                 </ion-item>
                 <ion-item>
-                    <ion-icon name="settings"></ion-icon>&nbsp;Ajustes
-                </ion-item>
+                    <ion-icon (click)="goTo('/home')" name="settings"></ion-icon>&nbsp;Ajustes
+                </ion-item>-->
                 <ion-item>
-                    <ion-icon name="power"></ion-icon>&nbsp;Salir
+                    <ion-icon (click)="exit()" name="power"></ion-icon>&nbsp;Salir
                 </ion-item>
             </ion-list>
         </ion-content>
