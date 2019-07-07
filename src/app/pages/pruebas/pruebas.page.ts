@@ -33,7 +33,7 @@ export class PruebasPage implements OnInit {
         this.jugadorP = currentPrueba.getCurrentUser();
         this.prueba = this.setPrueba();
         this.setSecondaryPlayers();
-        this.replaceDescription();
+
         this.pruebaType = this.pruebaTypeSetter();
 
 
@@ -79,6 +79,7 @@ export class PruebasPage implements OnInit {
     }
 
     setSecondaryPlayers() {
+        this.jugadoresS = [];
         let x = this.prueba.numPlayers - 1;
         let bol;
         for (let i = 0; i < x; i++) {
@@ -91,6 +92,7 @@ export class PruebasPage implements OnInit {
                 }
             }
         }
+        this.replaceDescription();
     }
 
     openRanking() {

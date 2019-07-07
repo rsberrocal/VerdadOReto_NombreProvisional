@@ -26,7 +26,9 @@
     <ion-row>
         <ion-col size="9">
             <ion-item>
-                <ion-label class="titleText" color="medium"> <ion-icon name="person"></ion-icon> {{jugadorP.name}} </ion-label>
+                <ion-label class="titleText" color="medium">
+                    <ion-icon name="person"></ion-icon>
+                    {{jugadorP.name}} </ion-label>
             </ion-item>
         </ion-col>
         <ion-col size="3">
@@ -65,7 +67,25 @@
 
     </ion-card>
     <ion-row>
-        <ion-col size="1"> </ion-col>
+        <ion-col size="4">
+            <ion-button class="titleText" size="default" expand="block" color="medium"
+                        (click)="skip(); navigate('/verdad-o-reto')">Skip
+            </ion-button>
+        </ion-col>
+        <ion-col size="4">
+            <ion-button *ngIf="jugadoresS.length>0" class="titleText" size="default" expand="block" color="tertiary"
+                        (click)="setSecondaryPlayers()">
+                <ion-icon name="refresh"></ion-icon>
+                &nbsp;
+                <ion-icon name="people"></ion-icon>
+            </ion-button>
+        </ion-col>
+        <ion-col size="4">
+            <ion-button class="titleText" size="default" expand="block" color="success"
+                        (click)="play(); navigate('/verdad-o-reto')">Accept
+            </ion-button>
+        </ion-col>
+        <!-- <ion-col size="1"> </ion-col>
         <ion-col size="4" text-left>
             <ion-button class="titleText" size="default" expand="block" color="medium" (click)="skip(); navigate('/verdad-o-reto')">Skip</ion-button>
         </ion-col>
@@ -74,6 +94,6 @@
             <ion-button class="titleText" size="default" expand="block" color="success" (click)="play(); navigate('/verdad-o-reto')">Accept
             </ion-button>
         </ion-col>
-        <ion-col size="1"></ion-col>
+        <ion-col size="1"></ion-col>-->
     </ion-row>
 </ion-content>
