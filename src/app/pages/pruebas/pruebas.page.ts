@@ -169,7 +169,7 @@ export class PruebasPage implements OnInit {
         for (let actualList of  arrayPlayers) {
             subHeaderText += '<p  style="margin: 0">'
             for (let players of actualList) {
-                subHeaderText += players.name + ' ' + vasos * 0.5 + ' <span style = "color:yellow"><ion-icon name="beer"></ion-icon></span> </p>';
+                subHeaderText += players.name + ' ' + vasos * 0.5 + ' <span class="iconColor"><ion-icon name="beer"></ion-icon></span> </p>';
             }
             vasos++;
         }
@@ -178,6 +178,7 @@ export class PruebasPage implements OnInit {
         const alert = await this.alertController.create({
             header: 'Toca beber chavales',
             message: subHeaderText,
+            cssClass:'finalRound',
             buttons: [
                 {
                     text: 'Ok',
@@ -186,8 +187,7 @@ export class PruebasPage implements OnInit {
                             this.pruebasService.rondas += 1;
                             this.setPlayersNotPlayed();
                             this.router.navigate([routerLink]);
-                        })
-
+                        });
                     }
                 }
             ]
