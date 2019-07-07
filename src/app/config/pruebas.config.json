@@ -44,12 +44,6 @@
       "score": 3
     },
     {
-      "title": "Cambio de vida",
-      "description": "Cámbiate la ropa con {user} si es del sexo opuesto ",
-      "numPlayers": 2,
-      "score": 3
-    },
-    {
       "title": "???????????????",
       "description": "Bebe del escote de {user} ",
       "numPlayers": 2,
@@ -80,7 +74,7 @@
       "score": 3
     },
     {
-      "title": "?????",
+      "title": "Cambio de vida",
       "description": "Cámbiate la ropa con {user} si es del sexo opuesto ",
       "numPlayers": 2,
       "score": 3,
@@ -204,13 +198,15 @@
       "title": "Dracarys",
       "description": "Come lo más picante que tengas ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_dracarys.png"
     },
     {
       "title": "Flus Flus",
       "description": "El de tu izquierda te ha de tirar un vaso de agua a la cara ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_flus flus.png"
     },
     {
       "title": "Puro Perreo",
@@ -260,7 +256,7 @@
       "description": "Muerde el cachete de {user}  ",
       "numPlayers": 2,
       "score": 2,
-      "image": 
+      "image": "/assets/img/reto2p_the walking dead.png"
     },
     {
       "title": "And the winner is...",
@@ -474,7 +470,8 @@
       "title": "Respirar te da la vida",
       "description": "Esnifa algo  ",
       "numPlayers": 1,
-      "score": 3
+      "score": 3,
+      "image": "/assets/img/reto3p_esnifar algo.png"
     },
     {
       "title": "Casa Katia",
@@ -499,7 +496,8 @@
       "title": "Ya no serás mas otaco",
       "description": "Estírate y que te frieguen  ",
       "numPlayers": 1,
-      "score": 3
+      "score": 3,
+      "image": "/assets/img/verdad_tiempo sin ducharte & reto2p_fregar.png"
     },
     {
       "title": "Ácido Sulfúrico",
@@ -649,7 +647,8 @@
       "title": "¿Cuánto tiempo has pasado sin ducharte?",
       "description": "  ",
       "numPlayers": 1,
-      "score": 1
+      "score": 1,
+      "image": "/assets/img/verdad_tiempo sin ducharte & reto2p_fregar.png"
     },
     {
       "title": "¿Con quién tendrías una cita a solas de aquí?(Quedad un día)",
@@ -697,7 +696,8 @@
       "title": "¿Cuál ha sido tu peor pesadilla?",
       "description": "  ",
       "numPlayers": 1,
-      "score": 1
+      "score": 1,
+      "image": "/assets/img/verdad_peor pesadilla.png"
     }
   ]
 }
