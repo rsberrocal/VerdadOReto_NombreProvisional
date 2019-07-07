@@ -3,11 +3,11 @@
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title text-center class="titleText" > UB (Nombre provisional)</ion-title>
+        <ion-title text-center class="titleText"> UB (Nombre provisional)</ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content scrollY="false">
     <ion-grid>
         <ion-row>
             <ion-col>
@@ -25,27 +25,33 @@
         <!-- GAMES -->
         <ion-row>
             <ion-col text-center>
-                <ion-button expand="block" size="large" color="tertiary" class="titleText" (click)="navigate('/verdad-o-reto')"><b>Verdad o Reto</b></ion-button>
+                <ion-button expand="block" size="large" color="tertiary" class="titleText"
+                            (click)="navigate('/verdad-o-reto')"><b>Verdad o Reto</b></ion-button>
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col text-center>
-                <ion-button expand="block" size="large" color="tertiary" class="titleText" (click)="presentAlert('A ver tontopolla', 'Que hemos tenio recus y no ha dao tiempo')"><b>Moneda</b></ion-button>
+                <ion-button expand="block" size="large" color="tertiary" class="titleText"
+                            (click)="presentAlert('A ver tontopolla', 'Que hemos tenio recus y no ha dao tiempo')"><b>Moneda</b>
+                </ion-button>
             </ion-col>
         </ion-row>
         <ion-row>
             <ion-col text-center>
-                <ion-button expand="block" size="large" color="tertiary" class="titleText" (click)="presentAlert('A ver tontopolla', 'Que hemos tenio recus y no ha dao tiempo')"><b>Yo nunca</b></ion-button>
+                <ion-button expand="block" size="large" color="tertiary" class="titleText"
+                            (click)="presentAlert('A ver tontopolla', 'Que hemos tenio recus y no ha dao tiempo')"><b>Yo
+                    nunca</b></ion-button>
             </ion-col>
         </ion-row>
         <!-- ADD USERS -->
         <ion-row>
-            <ion-col size = 1> </ion-col>
-            <ion-col text-center size = 10>
-                <ion-button class="titleText" expand="block" size="default" color="primary" routerLink="/users/add-user">Añadir Participantes
+            <ion-col size=1></ion-col>
+            <ion-col text-center size=10>
+                <ion-button class="titleText" expand="block" size="default" color="primary"
+                            routerLink="/users/add-user">Añadir Participantes
                 </ion-button>
             </ion-col>
-            <ion-col size = 1> </ion-col>
+            <ion-col size=1></ion-col>
         </ion-row>
     </ion-grid>
 
@@ -54,7 +60,7 @@
             <!-- Users Lists -->
             <ion-row>
                 <ion-col>
-                    <h2 class="subtitles"> Lista de Usuarios</h2>
+                    <h2 class="subtitles ion-no-margin" > Lista de Usuarios</h2>
                 </ion-col>
             </ion-row>
             <ion-row>
