@@ -29,18 +29,16 @@ export class PruebasPage implements OnInit {
         private currentPrueba: CurrentPruebaService,
         private alertController: AlertController,
         private menu: MenuController) {
-        this.ronda = this.pruebasService.getRonda();
-        this.scoreP = currentPrueba.getScore();
-        this.jugadorP = currentPrueba.getCurrentUser();
-        this.prueba = this.setPrueba();
-        this.setSecondaryPlayers();
-
-        this.pruebaType = this.pruebaTypeSetter();
-
 
     }
 
-    ngOnInit() {
+    ionViewWillEnter(){
+        this.ronda = this.pruebasService.getRonda();
+        this.scoreP = this.currentPrueba.getScore();
+        this.jugadorP = this.currentPrueba.getCurrentUser();
+        this.prueba = this.setPrueba();
+        this.setSecondaryPlayers();
+        this.pruebaType = this.pruebaTypeSetter();
     }
 
     getPruebasList(): Pruebas[] {
