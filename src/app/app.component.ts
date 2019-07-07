@@ -19,13 +19,9 @@ export class AppComponent {
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
         private menuController: MenuController,
-<<<<<<< HEAD
         private userService: UsersService,
-        private alertController: AlertController
-=======
+        private alertController: AlertController,
         private router: Router,
-        private userService: UsersService
->>>>>>> c76bd4d1d7aa9829a56b52b8faf4e24771b87f67
     ) {
         this.initializeApp();
     }
@@ -59,23 +55,22 @@ export class AppComponent {
         this.users = [];
         this.userService.userList = [];
     }
-    async presentAlert(header: string, subHeader: string) {
+    async presentAlert() {
         const alert = await this.alertController.create({
-            header: header,
-            subHeader: subHeader,
+
             buttons: [
                 {
-                    text: 'Cancel',
-                    role: 'cancel',
-                    cssClass: 'secondary',
+                    text: 'Reiniciar',
                     handler: (blah) => {
-                        console.log('Confirm Cancel: blah');
+                        this.resetGame();
+
+
                     }
                 }, {
-                    text: 'Okay',
+                    text: 'Cancelar',
                     handler: () => {
                         console.log('Confirm Okay');
-                    }
+    }
                 }
             ]
         });
