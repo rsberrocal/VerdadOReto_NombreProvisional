@@ -5,7 +5,7 @@ import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {Users} from './shared/classes/users';
 import {UsersService} from './core/services/users.service';
-import {Router} from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -58,15 +58,19 @@ export class AppComponent {
         this.users = [];
         this.userService.userList = [];
     }
-    async presentAlert() {
+    async presentAlert(routerLink) {
         const alert = await this.alertController.create({
+            header: 'Salir',
+            subHeader: 'Seguro que quieres salir de la partida?',
+
 
             buttons: [
                 {
+
                     text: 'Reiniciar',
                     handler: (blah) => {
                         this.resetGame();
-
+                        this.router.navigate([routerLink]);
 
                     }
                 }, {
