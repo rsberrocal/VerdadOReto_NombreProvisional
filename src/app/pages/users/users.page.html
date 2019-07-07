@@ -1,10 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+
+        <ion-title text-center class="titleText"> FINAL DE PARTIDA</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content scrollY="false">
+    <div class="fixedScrollRanking">
+        <app-ranking [usersList]="users"></app-ranking>
+    </div>
+
+</ion-content>
 <ion-grid>
-    <ion-row>
-        <ion-title text-center> Final de la partida</ion-title>
-    </ion-row>
-    <ion-row>
-        <app-ranking></app-ranking>
-    </ion-row>
+
+
+    <app-ranking [usersList]="users"></app-ranking>
+    <ion-button class="titleText" color="success" (click)="navigate('/home')" text-center> Reiniciar Partida
+    </ion-button>
 
 
 </ion-grid>
