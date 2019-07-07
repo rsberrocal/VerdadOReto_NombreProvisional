@@ -141,7 +141,7 @@ export class PruebasPage implements OnInit {
     }
 
     navigate(routerLink) {
-        if (this.userService.allUsersHavePlayed() && this.pruebasService.rondas == 1) {
+        if (this.userService.allUsersHavePlayed() && this.pruebasService.rondas == 5) {
             this.presentAlert2();
         } else if (this.userService.allUsersHavePlayed()) {
             this.presentAlert('/verdad-o-reto');
