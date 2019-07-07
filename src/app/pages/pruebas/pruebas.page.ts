@@ -130,8 +130,6 @@ export class PruebasPage implements OnInit {
         for (let player of this.jugadoresS) {
             player.score += this.scoreP;
         }
-        console.log(this.jugadorP);
-        console.log(this.jugadoresS);
     }
 
     setPlayersNotPlayed() {
@@ -143,68 +141,45 @@ export class PruebasPage implements OnInit {
     navigate(routerLink) {
         if (this.userService.allUsersHavePlayed()) {
             this.presentAlert('/verdad-o-reto');
-            this.pruebasService.rondas += 1;
-            this.setPlayersNotPlayed();
-        }
-        else {
+
+        } else {
             this.router.navigate([routerLink], {replaceUrl: true});
             //Aqui va el metodo para pasar a la siguiente ronda.
         }
     }
 
     async presentAlert(routerLink) {
-        let juv, jua, jur;
-        juv = [];
-        jua = [];
-        jur = [];
-        let cont = 0;
-        let orderedList = this.userService.getUsersList().sort(function (a, b) {
-            return b.score - a.score
+
+        let orderedList = this.userService.getUsersList().sort(function(a, b) {
+            return b.score - a.score;
         });
-
-        for (let i = 0; i <= orderedList.length / 3; i++) {
-            juv.push(orderedList[i]);
-            cont++;
+        let arrayPlayers = [];
+        let aux;
+        for (let index = 0; index < orderedList.length; index += orderedList.length/3) {
+            aux = orderedList.slice(index, index + (orderedList.length/3));
+            arrayPlayers.push(aux);
         }
-
-        for (let j = cont; j <= 2 * cont; j++) {
-            jua.push(orderedList[j]);
-        }
-
-        for (let k = 2 * cont; k <= orderedList.length; k++) {
-            jur.push(orderedList[k]);
-        }
-
-        let subHeaderText = '';
-        let listas = [juv, jua, jur];
-        for (let x = 0; x < 3; x++) {
-            let actualList = listas[x] as Users[];
-            for (let p = 0; p < actualList.length; p++) {
-                switch (x) {
-                    case 0:
-                        subHeaderText += actualList[p].name + '   0\n';
-                        break;
-                    case 1:
-                        subHeaderText += actualList[p].name + '   1/2 vaso\n';
-                        break;
-
-                    case 2:
-                        subHeaderText += actualList[p].name + '   1 vaso\n';
-                        break;
-                }
+        console.log('array players',arrayPlayers);
+        let subHeaderText='';
+        let vasos = 0;
+        for(let actualList of  arrayPlayers){
+            subHeaderText += '<p style="margin: 0">'
+            for(let players of actualList){
+                subHeaderText += players.name +' '+ vasos*0.5 +' <ion-icon name="beer"></ion-icon></p>';
             }
-
+            vasos++;
         }
-
+        console.log('Subheader final',subHeaderText);
 
         const alert = await this.alertController.create({
             header: 'Toca beber chavales',
-            subHeader: subHeaderText,
+            message: subHeaderText,
             buttons: [
                 {
-
                     text: 'Ok',
                     handler: (blah) => {
+                        this.pruebasService.rondas += 1;
+                        this.setPlayersNotPlayed();
                         this.router.navigate([routerLink]);
                     }
                 }
