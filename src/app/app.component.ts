@@ -55,8 +55,10 @@ export class AppComponent {
         });
     }
     resetGame(){
-        this.users = [];
-        this.userService.userList = [];
+        for (let i = 0; i<this.users.length; i++) {
+            this.users[i].score=0;
+            this.userService.userList[i].score= 0;
+        }
     }
     async presentAlert(routerLink) {
         const alert = await this.alertController.create({
