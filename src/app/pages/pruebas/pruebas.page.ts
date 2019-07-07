@@ -32,6 +32,9 @@ export class PruebasPage implements OnInit {
 
     }
 
+    ngOnInit(): void {
+    }
+
     ionViewWillEnter(){
         this.ronda = this.pruebasService.getRonda();
         this.scoreP = this.currentPrueba.getScore();
@@ -137,7 +140,10 @@ export class PruebasPage implements OnInit {
     }
 
     navigate(routerLink) {
-        if (this.userService.allUsersHavePlayed()) {
+        if (this.userService.allUsersHavePlayed() && this.pruebasService.rondas==10){
+            this.presentAlert2();
+        }
+        else if (this.userService.allUsersHavePlayed()) {
             this.presentAlert('/verdad-o-reto');
 
         } else {
@@ -187,4 +193,19 @@ export class PruebasPage implements OnInit {
         await alert.present();
     }
 
+    async presentAlert2() {
+        const alert = await this.alertController.create({
+            header: 'Fin de Partida!!',
+            subHeader: 'A ver quien es el tonto que ha quedado último',
+            buttons: [
+                {
+                    text: 'Ver Ranking',
+                    handler: (blah) => {
+                        this.router.navigate(['/users']);
+                    }
+                }]
+        });
+
+        await alert.present();
+    }
 }
