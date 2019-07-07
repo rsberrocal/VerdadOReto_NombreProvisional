@@ -29,18 +29,19 @@ export class PruebasPage implements OnInit {
         private currentPrueba: CurrentPruebaService,
         private alertController: AlertController,
         private menu: MenuController) {
-        this.ronda = this.pruebasService.getRonda();
-        this.scoreP = currentPrueba.getScore();
-        this.jugadorP = currentPrueba.getCurrentUser();
-        this.prueba = this.setPrueba();
-        this.setSecondaryPlayers();
-
-        this.pruebaType = this.pruebaTypeSetter();
-
 
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
+    }
+
+    ionViewWillEnter(){
+        this.ronda = this.pruebasService.getRonda();
+        this.scoreP = this.currentPrueba.getScore();
+        this.jugadorP = this.currentPrueba.getCurrentUser();
+        this.prueba = this.setPrueba();
+        this.setSecondaryPlayers();
+        this.pruebaType = this.pruebaTypeSetter();
     }
 
     getPruebasList(): Pruebas[] {
@@ -139,7 +140,10 @@ export class PruebasPage implements OnInit {
     }
 
     navigate(routerLink) {
-        if (this.userService.allUsersHavePlayed()) {
+        if (this.userService.allUsersHavePlayed() && this.pruebasService.rondas==10){
+            this.presentAlert2();
+        }
+        else if (this.userService.allUsersHavePlayed()) {
             this.presentAlert('/verdad-o-reto');
 
         } else {
@@ -189,4 +193,19 @@ export class PruebasPage implements OnInit {
         await alert.present();
     }
 
+    async presentAlert2() {
+        const alert = await this.alertController.create({
+            header: 'Fin de Partida!!',
+            subHeader: 'A ver quien es el tonto que ha quedado último',
+            buttons: [
+                {
+                    text: 'Ver Ranking',
+                    handler: (blah) => {
+                        this.router.navigate(['/users']);
+                    }
+                }]
+        });
+
+        await alert.present();
+    }
 }
