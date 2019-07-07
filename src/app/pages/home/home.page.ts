@@ -33,7 +33,7 @@ export class HomePage {
         if (this.users.length >= 3) {
             this.router.navigate([routerLink]);
         } else {
-            this.presentAlert();
+            this.presentAlert('ERES SUBNORMAL', 'Necesitas almenos 3 participantes para jugar');
         }
     }
 
@@ -41,10 +41,10 @@ export class HomePage {
         this.userService.removeUser(event.name);
     }
 
-    async presentAlert() {
+    async presentAlert(header: string, subHeader: string) {
         const alert = await this.alertController.create({
-            header: 'ERES SUBNORMAL',
-            subHeader: 'Necesitas almenos 3 participantes para jugar.',
+            header: header,
+            subHeader: subHeader,
             buttons: ['OK']
         });
 
