@@ -1,7 +1,10 @@
 .invalido{
   --border-color:#f04141;
 }
-
+.fixedScroll{
+  height: 75vh;
+  overflow-y: scroll;
+}
 
 .titleText {
   font-family:"Yu Gothic UI Semibold";
