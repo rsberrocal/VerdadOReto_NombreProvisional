@@ -6,6 +6,7 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {Users} from './shared/classes/users';
 import {UsersService} from './core/services/users.service';
 import {Router, RouterLink} from '@angular/router';
+import {PruebasService} from "./core/services/pruebas.service";
 
 @Component({
     selector: 'app-root',
@@ -21,10 +22,8 @@ export class AppComponent {
         private menuController: MenuController,
         private userService: UsersService,
         private alertController: AlertController,
-
+        private pruebaService: PruebasService,
         private router: Router,
-
-
     ) {
         this.initializeApp();
     }
@@ -40,12 +39,12 @@ export class AppComponent {
         this.menuController.enable(false, 'ranking');
     }
 
-    goTo(route){
+    goTo(route) {
         this.router.navigate([route]);
         this.menuController.close('start');
     }
 
-    exit(){
+    exit() {
         //navigator['app'].exitApp();
     }
 
@@ -54,12 +53,17 @@ export class AppComponent {
             return b.score - a.score
         });
     }
-    resetGame(){
-        for (let i = 0; i<this.users.length; i++) {
-            this.users[i].score=0;
-            this.userService.userList[i].score= 0;
+
+    resetGame() {
+        for (let i = 0; i < this.userService.userList.length; i++) {
+
+            this.userService.userList[i].score = 0;
+
+            this.userService.userList[i].havePlayed = false;
+            this.pruebaService.rondas = 1;
         }
     }
+
     async presentAlert(routerLink) {
         const alert = await this.alertController.create({
             header: 'Salir',
@@ -79,7 +83,7 @@ export class AppComponent {
                     text: 'Cancelar',
                     handler: () => {
                         console.log('Confirm Okay');
-    }
+                    }
                 }
             ]
         });
