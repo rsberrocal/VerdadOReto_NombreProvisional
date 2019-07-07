@@ -28,7 +28,6 @@ export class PruebasPage implements OnInit {
         private pruebasService: PruebasService,
         private currentPrueba: CurrentPruebaService,
         private menu: MenuController) {
-
         this.ronda = this.pruebasService.getRonda();
         this.scoreP = currentPrueba.getScore();
         this.jugadorP = currentPrueba.getCurrentUser();
@@ -37,6 +36,7 @@ export class PruebasPage implements OnInit {
         this.replaceDescription();
         this.pruebaType = this.pruebaTypeSetter();
 
+
     }
 
     ngOnInit() {
@@ -44,14 +44,6 @@ export class PruebasPage implements OnInit {
 
     getPruebasList(): Pruebas[] {
         return this.pruebasService.getPruebas();
-    }
-
-    getImg(){
-        if(this.prueba.image){
-            return this.prueba.image;
-        }else{
-            return '';
-        }
     }
 
     setPrueba(): Pruebas {
