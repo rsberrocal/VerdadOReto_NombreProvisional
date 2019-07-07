@@ -15,7 +15,7 @@ import {NgZone} from '@angular/core';
 })
 export class PruebasPage implements OnInit {
     prueba: Pruebas;
-    jugadorP: Users;
+    jugadorP: Users = new Users('');
     jugadoresS: Users[] = [];
     scoreP: number;
     ronda: number;
