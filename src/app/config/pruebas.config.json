@@ -259,7 +259,8 @@
       "title": "The Walking Dead",
       "description": "Muerde el cachete de {user}  ",
       "numPlayers": 2,
-      "score": 2
+      "score": 2,
+      "image": 
     },
     {
       "title": "And the winner is...",
@@ -283,7 +284,8 @@
       "title": "Dobby es libre",
       "description": "Huele el calcetín del de tu izquierda  ",
       "numPlayers": 1,
-      "score": 3
+      "score": 3,
+      "image": "/assets/img/reto3p_oler calcetin.png"
     },
     {
       "title": "??",
@@ -302,7 +304,8 @@
       "title": "O dubi du quiero ser como tú",
       "description": "Imita durante una ronda al de tu izquierda  ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "imagen": "/assets/img/reto2p_imitar.png"
     },
     {
       "title": "¿A quién te follarías?",
