@@ -5,17 +5,16 @@
     </ion-toolbar>
 </ion-header>
 <ion-content scrollY="false">
-    <div class="fixedScrollRanking">
+    <div class="fixedScroll">
         <app-ranking [usersList]="users"></app-ranking>
     </div>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="12" text-center>
+                <ion-button  class="titleText" color="success" (click)="navigate('/home')" text-center> Reiniciar Partida</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
 
 </ion-content>
-<ion-grid>
-
-
-    <app-ranking [usersList]="users"></app-ranking>
-    <ion-button class="titleText" color="success" (click)="navigate('/home')" text-center> Reiniciar Partida
-    </ion-button>
-
-
-</ion-grid>

@@ -20,7 +20,11 @@ export class UsersPage implements OnInit {
   ngOnInit() {
   }
     navigate(routerLink) {
-        this.router.navigate([routerLink], {replaceUrl: true});
+        for (let i=0; i<this.users.length; i++){
+            this.userService.userList[i].score= 0;
+            this.users[i].score=0;
+        }
+        this.router.navigate([routerLink]);
         //Aqui va el metodo para pasar a la siguiente ronda.
     }
 

@@ -141,7 +141,7 @@ export class PruebasPage implements OnInit {
     }
 
     navigate(routerLink) {
-        if (this.userService.allUsersHavePlayed() && this.pruebasService.rondas == 10) {
+        if (this.userService.allUsersHavePlayed() && this.pruebasService.rondas == 1) {
             this.presentAlert2();
         } else if (this.userService.allUsersHavePlayed()) {
             this.presentAlert('/verdad-o-reto');
@@ -204,7 +204,8 @@ export class PruebasPage implements OnInit {
                     text: 'Ver Ranking',
                     handler: () => {
                         this.zone.run(async () => {
-                            await this.router.navigate(['/users']);
+                            this.setPlayersNotPlayed();
+                            this.router.navigate(['/users']);
                         });
                     }
                 }]
