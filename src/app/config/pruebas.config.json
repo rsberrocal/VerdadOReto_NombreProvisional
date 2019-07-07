@@ -11,7 +11,8 @@
       "title": "Coma Etílico",
       "description": "Bébete un cubata entero",
       "numPlayers": 1,
-      "score": 4
+      "score": 4,
+      "image": "/assets/img/reto4p_cubata entero.png"
     },
     {
       "title": "Eres un pastel",
@@ -94,7 +95,7 @@
       "score": 3
     },
     {
-      "title": "43+26 (mod)",
+      "title": "459 mod(130)",
       "description": "Ponte con {user} haciendo un 69 con ropa ",
       "numPlayers": 2,
       "score": 3
@@ -238,7 +239,8 @@
       "title": "Ojalá a David",
       "description": "No hables en 1 ronda, si lo haces bebes  ",
       "numPlayers": 2,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_ojala a david.png"
     },
     {
       "title": "Tienes tremendo...",
@@ -250,7 +252,8 @@
       "title": "Richi",
       "description": "Abre al contacto con el que tengas la conversación mas antigua  ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_richi.png"
     },
     {
       "title": "The Walking Dead",
@@ -362,7 +365,8 @@
       "title": "5 estrellas michelín",
       "description": "Te han de hacer una comida y te la has de comer  ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_comer algo.png"
     },
     {
       "title": "Haz una voltereta",
@@ -537,7 +541,8 @@
       "title": "Vampiro",
       "description": "Hazle un chupetón a {user} en el cuello  ",
       "numPlayers": 2,
-      "score": 3
+      "score": 3,
+      "image": "/assets/img/reto3p_vampiro.png"
     },
     {
       "title": "¿Qué es lo más loco que has hecho por un chico o una chica?",
@@ -549,7 +554,8 @@
       "title": "¿Cuál es la cosa más embarazosa que tus padres te han pillado haciendo?",
       "description": "  ",
       "numPlayers": 1,
-      "score": 1
+      "score": 1,
+      "image": "/assets/img/verdad_embarazosa pillado.png"
     },
     {
       "title": "Si pudieras elegir, ¿con quién dormirías esta noche",
