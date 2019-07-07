@@ -46,6 +46,10 @@ export class PruebasPage implements OnInit {
         return this.pruebasService.getPruebas();
     }
 
+    getImg() {
+        return this.prueba.image ? this.prueba.image : '/assets/img/default_img.png';
+    }
+
     setPrueba(): Pruebas {
         let x;
         while (true) {

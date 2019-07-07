@@ -47,19 +47,24 @@
             </ion-col>
             <ion-col size = 1> </ion-col>
         </ion-row>
-        <!-- Users Lists -->
-        <ion-row>
-            <ion-col>
-                <h2 class="subtitles"> Lista de Usuarios</h2>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col text-center>
-                <app-list-users [users]="users" (deleteEvent)="deleteUserEvent($event)"></app-list-users>
-            </ion-col>
-        </ion-row>
     </ion-grid>
 
-
+    <div *ngIf="users.length>0">
+        <ion-grid>
+            <!-- Users Lists -->
+            <ion-row>
+                <ion-col>
+                    <h2 class="subtitles"> Lista de Usuarios</h2>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col text-center>
+                    <div class="fixedScroll">
+                        <app-list-users [users]="users" (deleteEvent)="deleteUserEvent($event)"></app-list-users>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
 </ion-content>
 

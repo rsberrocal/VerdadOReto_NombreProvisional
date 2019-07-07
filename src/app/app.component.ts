@@ -70,8 +70,8 @@ export class AppComponent {
                     text: 'Reiniciar',
                     handler: (blah) => {
                         this.resetGame();
+                        this.menuController.close('start');
                         this.router.navigate([routerLink]);
-
                     }
                 }, {
                     text: 'Cancelar',
