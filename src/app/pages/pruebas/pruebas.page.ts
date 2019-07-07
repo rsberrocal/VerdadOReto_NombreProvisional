@@ -36,7 +36,7 @@ export class PruebasPage implements OnInit {
     ngOnInit(): void {
     }
 
-    ionViewWillEnter(){
+    ionViewWillEnter() {
         this.ronda = this.pruebasService.getRonda();
         this.scoreP = this.currentPrueba.getScore();
         this.jugadorP = this.currentPrueba.getCurrentUser();
@@ -141,10 +141,9 @@ export class PruebasPage implements OnInit {
     }
 
     navigate(routerLink) {
-        if (this.userService.allUsersHavePlayed() && this.pruebasService.rondas==10){
+        if (this.userService.allUsersHavePlayed() && this.pruebasService.rondas == 10) {
             this.presentAlert2();
-        }
-        else if (this.userService.allUsersHavePlayed()) {
+        } else if (this.userService.allUsersHavePlayed()) {
             this.presentAlert('/verdad-o-reto');
 
         } else {
@@ -155,26 +154,26 @@ export class PruebasPage implements OnInit {
 
     async presentAlert(routerLink) {
 
-        let orderedList = this.userService.getUsersList().sort(function(a, b) {
+        let orderedList = this.userService.getUsersList().sort(function (a, b) {
             return b.score - a.score;
         });
         let arrayPlayers = [];
         let aux;
-        for (let index = 0; index < orderedList.length; index += orderedList.length/3) {
-            aux = orderedList.slice(index, index + (orderedList.length/3));
+        for (let index = 0; index < orderedList.length; index += orderedList.length / 3) {
+            aux = orderedList.slice(index, index + (orderedList.length / 3));
             arrayPlayers.push(aux);
         }
-        console.log('array players',arrayPlayers);
-        let subHeaderText='';
+        console.log('array players', arrayPlayers);
+        let subHeaderText = '';
         let vasos = 0;
-        for(let actualList of  arrayPlayers){
-            subHeaderText += '<p style="margin: 0">'
-            for(let players of actualList){
-                subHeaderText += players.name +' '+ vasos*0.5 +' <ion-icon name="beer"></ion-icon></p>';
+        for (let actualList of  arrayPlayers) {
+            subHeaderText += '<p  style="margin: 0">'
+            for (let players of actualList) {
+                subHeaderText += players.name + ' ' + vasos * 0.5 + ' <span style = "color:yellow"><ion-icon name="beer"></ion-icon></span> </p>';
             }
             vasos++;
         }
-        console.log('Subheader final',subHeaderText);
+        console.log('Subheader final', subHeaderText);
 
         const alert = await this.alertController.create({
             header: 'Toca beber chavales',
@@ -208,7 +207,8 @@ export class PruebasPage implements OnInit {
                         this.zone.run(async () => {
                             await this.router.navigate(['/users']);
                         });
-                }}]
+                    }
+                }]
         });
 
         await alert.present();

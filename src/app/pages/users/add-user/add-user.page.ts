@@ -39,7 +39,8 @@ export class AddUserPage implements OnInit {
     }
 
     resetUsers(){
-
+        this.usersService.userList =[];
+        this.users = [];
     }
 
     userExists(userName) {
