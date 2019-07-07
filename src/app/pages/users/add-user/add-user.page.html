@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content scrollY="false">
 <ion-grid>
   <ion-row>
     <ion-col size="10">
@@ -23,8 +23,15 @@
   </ion-row>
   <ion-row>
     <ion-col>
-      <app-list-users [users]="users" (deleteEvent)="deleteUserEvent($event)"></app-list-users>
+      <div class="fixedScroll">
+        <app-list-users [users]="users" (deleteEvent)="deleteUserEvent($event)"></app-list-users>
+      </div>
     </ion-col>
   </ion-row>
 </ion-grid>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="full" (click)="resetUsers()">Borrar</ion-button>
+  </ion-toolbar>
+</ion-footer>

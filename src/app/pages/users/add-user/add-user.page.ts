@@ -38,6 +38,10 @@ export class AddUserPage implements OnInit {
         this.usersService.removeUser(event.name);
     }
 
+    resetUsers(){
+
+    }
+
     userExists(userName) {
         for (let user of this.users) {
             if (userName == user.name) {
