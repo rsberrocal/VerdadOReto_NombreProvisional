@@ -167,9 +167,8 @@ export class PruebasPage implements OnInit {
         let subHeaderText = '';
         let vasos = 0;
         for (let actualList of  arrayPlayers) {
-            subHeaderText += '<p  style="margin: 0">'
             for (let players of actualList) {
-                subHeaderText += players.name + ' ' + vasos * 0.5 + ' <span class="iconColor"><ion-icon name="beer"></ion-icon></span> </p>';
+                subHeaderText += '<p  style="margin: 0">'+players.name + ' ' + vasos * 0.5 + ' <span class="iconColor"><ion-icon name="beer"></ion-icon></span> </p>';
             }
             vasos++;
         }
