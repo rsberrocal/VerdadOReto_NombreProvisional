@@ -6,7 +6,7 @@ import {PruebasService} from '../../core/services/pruebas.service';
 import {CurrentPruebaService} from '../../core/services/current-prueba.service';
 import {Router} from '@angular/router';
 import {AlertController, MenuController} from '@ionic/angular';
-
+import {NgZone} from '@angular/core';
 
 @Component({
     selector: 'app-pruebas',
@@ -28,6 +28,7 @@ export class PruebasPage implements OnInit {
         private pruebasService: PruebasService,
         private currentPrueba: CurrentPruebaService,
         private alertController: AlertController,
+        private zone: NgZone,
         private menu: MenuController) {
 
     }
@@ -181,10 +182,13 @@ export class PruebasPage implements OnInit {
             buttons: [
                 {
                     text: 'Ok',
-                    handler: (blah) => {
-                        this.pruebasService.rondas += 1;
-                        this.setPlayersNotPlayed();
-                        this.router.navigate([routerLink]);
+                    handler: () => {
+                        this.zone.run(async () => {
+                            this.pruebasService.rondas += 1;
+                            this.setPlayersNotPlayed();
+                            this.router.navigate([routerLink]);
+                        })
+
                     }
                 }
             ]
@@ -200,10 +204,11 @@ export class PruebasPage implements OnInit {
             buttons: [
                 {
                     text: 'Ver Ranking',
-                    handler: (blah) => {
-                        this.router.navigate(['/users']);
-                    }
-                }]
+                    handler: () => {
+                        this.zone.run(async () => {
+                            await this.router.navigate(['/users']);
+                        });
+                }}]
         });
 
         await alert.present();
