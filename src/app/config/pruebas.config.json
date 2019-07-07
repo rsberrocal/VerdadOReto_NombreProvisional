@@ -44,7 +44,7 @@
       "score": 3
     },
     {
-      "title": "???????????????",
+      "title": "(título original)",
       "description": "Bebe del escote de {user} ",
       "numPlayers": 2,
       "score": 3
@@ -53,7 +53,8 @@
       "title": "Hasta el fondo",
       "description": "Líate con {user} ",
       "numPlayers": 2,
-      "score": 3
+      "score": 3,
+      "image": "/assets/img/reto3p_lio.png"
     },
     {
       "title": "Llamada de emergencia",
@@ -284,7 +285,7 @@
       "image": "/assets/img/reto3p_oler calcetin.png"
     },
     {
-      "title": "??",
+      "title": "Mejor pon contraseñas",
       "description": "Déjale el móvil al de tu izquierda durante 30 segundos  ",
       "numPlayers": 1,
       "score": 2,
@@ -346,12 +347,6 @@
       "score": 4
     },
     {
-      "title": "La calle bota fuego",
-      "description": "Deja que te quemen el vello de algún sitio  ",
-      "numPlayers": 1,
-      "score": 3
-    },
-    {
       "title": "Michelín",
       "description": "Ponte la camiseta de todo el mundo  ",
       "numPlayers": 1,
@@ -370,8 +365,8 @@
       "score": 2
     },
     {
-      "title": "???",
-      "description": "Haz una voltereta  ",
+      "title": "Haz una voltereta",
+      "description": "Pues eso  ",
       "numPlayers": 1,
       "score": 2
     },
@@ -397,7 +392,8 @@
       "title": "Dumbo",
       "description": "Lame la oreja del de tu izquierda  ",
       "numPlayers": 1,
-      "score": 4
+      "score": 4,
+      "image": "/assets/img/reto4p_dumbo.png"
     },
     {
       "title": "Masaje con final feliz",
@@ -461,10 +457,11 @@
       "score": 3
     },
     {
-      "title": "",
+      "title": "Dracarys 2",
       "description": "Deja que te quemen el vello de algún sitio  ",
       "numPlayers": 1,
-      "score": 3
+      "score": 3,
+      "image": "/assets/img/reto2p_dracarys.png"
     },
     {
       "title": "Respirar te da la vida",
@@ -506,7 +503,7 @@
       "score": 2
     },
     {
-      "title": "????",
+      "title": "Espero que no tengo pelusa",
       "description": "Bebe un chupito del ombligo de {user}  ",
       "numPlayers": 2,
       "score": 3
@@ -515,7 +512,8 @@
       "title": "Cepeda",
       "description": "Te van a afeitar una pequeña parte donde haya cantidad de pelo  ",
       "numPlayers": 1,
-      "score": 4
+      "score": 4,
+      "image": "/assets/img/reto4p_cepeda.png"
     },
     {
       "title": "Secuestro",
