@@ -5,7 +5,7 @@ import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {Users} from './shared/classes/users';
 import {UsersService} from './core/services/users.service';
-import {Router, Routes} from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -21,7 +21,11 @@ export class AppComponent {
         private menuController: MenuController,
         private userService: UsersService,
         private alertController: AlertController,
+<<<<<<< HEAD
         private router: Router,
+=======
+        private router: Router
+>>>>>>> bb54a4e0446c4007ed66da475ffdd1f2464638e3
     ) {
         this.initializeApp();
     }
