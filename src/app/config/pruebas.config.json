@@ -122,7 +122,8 @@
       "title": "Foto traviesa",
       "description": "Hazte una foto y envíasela a tu última búsqueda de insta ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_hacerse foto.png"
     },
     {
       "title": "1*10^-12",
@@ -158,7 +159,8 @@
       "title": "Es el móvil",
       "description": "Siéntate encima de {user} durante 1 ronda ",
       "numPlayers": 2,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_sentarse encima.png"
     },
     {
       "title": "Lee Sin",
@@ -227,13 +229,15 @@
       "title": "Patada voladora",
       "description": "Te han de mezclar en un chupito bebidas alcohólicas random ",
       "numPlayers": 1,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_patada voladora.png"
     },
     {
       "title": "Un Xavi",
       "description": "Ignora a {user} hasta que te salga un reto con él, si lo haces bebes ",
       "numPlayers": 2,
-      "score": 2
+      "score": 2,
+      "image": "/assets/img/reto2p_un xavi.png"
     },
     {
       "title": "Ojalá a David",
@@ -353,7 +357,8 @@
       "title": "Michelín",
       "description": "Ponte la camiseta de todo el mundo  ",
       "numPlayers": 1,
-      "score": 3
+      "score": 3,
+      "image": "/assets/img/reto3p_michelin.png"
     },
     {
       "title": "¿Cómo te gustan los huevos?",
@@ -633,7 +638,8 @@
       "title": "¿Alguna vez te han pillado haciendo algo que no debías?",
       "description": "  ",
       "numPlayers": 1,
-      "score": 1
+      "score": 1,
+      "image": "/assets/img/verdad_algo que no debias.png"
     },
     {
       "title": "¿Qué parte de tu cuerpo te encanta y qué parte odias?",
